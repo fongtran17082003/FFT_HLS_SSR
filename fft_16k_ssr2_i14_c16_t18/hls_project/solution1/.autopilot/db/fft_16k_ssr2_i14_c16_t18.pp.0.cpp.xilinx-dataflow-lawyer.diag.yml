@@ -1,0 +1,20 @@
+---
+MainSourceFile:  /home/phongtran/Downloads/ssr-fft-main/fft_16k_ssr2_i14_c16_t18/hls_project/solution1/.autopilot/db/fft_16k_ssr2_i14_c16_t18.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '314:19'
+    FilePath:        fft_16k_ssr2_i14_c16_t18.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '315:47'
+    FilePath:        fft_16k_ssr2_i14_c16_t18.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '315:59'
+    FilePath:        fft_16k_ssr2_i14_c16_t18.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '325:9'
+    FilePath:        fft_16k_ssr2_i14_c16_t18.cpp
+...

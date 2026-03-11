@@ -1,0 +1,152 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 359,
+    "instructions": 10,
+    "name": "fft_4k_ssr2_i16_c16_t16_top",
+    "total_instructions": 808
+  },
+  "1": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 57,
+    "instructions": 26,
+    "name": "dma_in",
+    "total_instructions": 57
+  },
+  "10": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 509,
+    "instructions": 23,
+    "name": "fft_syn<fft_4k_ssr2_i16_c16_t16::fft_params>",
+    "total_instructions": 23
+  },
+  "11": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 280,
+    "instructions": 31,
+    "name": "joiner",
+    "total_instructions": 86
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.hpp",
+    "fileloc": 325,
+    "instructions": 10,
+    "loads": {
+      "G": 1
+    },
+    "name": "get_phase_factor",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 10
+  },
+  "13": {
+    "basicblocks": 24,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 105,
+    "instructions": 172,
+    "loads": {
+      "L": 4
+    },
+    "name": "reorder",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 259
+  },
+  "14": {
+    "basicblocks": 4,
+    "calls": "8",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 299,
+    "instructions": 14,
+    "name": "fft_serial_kernel",
+    "total_instructions": 40
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 509,
+    "instructions": 23,
+    "name": "fft_syn<fft_4k_ssr2_i16_c16_t16::fft_params>",
+    "total_instructions": 23
+  },
+  "3": {
+    "basicblocks": 6,
+    "calls": "12",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 255,
+    "instructions": 48,
+    "loads": {
+      "L": 2
+    },
+    "name": "twiddle",
+    "total_instructions": 112
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 696,
+    "instructions": 3,
+    "name": "fft<fft_4k_ssr2_i16_c16_t16::fft_params>",
+    "total_instructions": 26
+  },
+  "5": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 86,
+    "instructions": 29,
+    "name": "dma_out",
+    "total_instructions": 57
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "1 13 9 3 7 14 11 5",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 320,
+    "instructions": 29,
+    "name": "fft_core",
+    "total_instructions": 798
+  },
+  "7": {
+    "basicblocks": 4,
+    "calls": "4",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 299,
+    "instructions": 14,
+    "name": "fft_serial_kernel",
+    "total_instructions": 40
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 696,
+    "instructions": 3,
+    "name": "fft<fft_4k_ssr2_i16_c16_t16::fft_params>",
+    "total_instructions": 26
+  },
+  "9": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 166,
+    "instructions": 59,
+    "name": "radix2p",
+    "total_instructions": 118
+  }
+}

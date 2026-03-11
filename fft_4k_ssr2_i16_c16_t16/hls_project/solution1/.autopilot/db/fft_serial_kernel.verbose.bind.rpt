@@ -1,0 +1,557 @@
+
+
+================================================================
+== Vitis HLS Report for 'fft_serial_kernel'
+================================================================
+* Date:           Mon Mar  9 10:31:58 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  0.20 us|  0.146 us|    54.00 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   | min |  max  |   Type  |
+    +---------+---------+----------+----------+-----+-------+---------+
+    |        3|    12561|  0.600 us|  2.512 ms|    3|  12561|       no|
+    +---------+---------+----------+----------+-----+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+------+------+----------+
+        |                                                 |                                       |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+        |                     Instance                    |                 Module                |   min   |   max   |    min   |    max   |  min |  max |   Type   |
+        +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+------+------+----------+
+        |grp_dataflow_in_loop_VITIS_LOOP_310_1_130_fu_57  |dataflow_in_loop_VITIS_LOOP_310_1_130  |     6280|     6280|  1.256 ms|  1.256 ms|  6279|  6279|  dataflow|
+        +-------------------------------------------------+---------------------------------------+---------+---------+----------+----------+------+------+----------+
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- VITIS_LOOP_310_1  |        2|    12560|      6282|          -|          -|  0 ~ 2|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 2, States = { 2 3 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.83>
+ST_1 : Operation 4 [1/1] (1.83ns)   --->   "%iter_read = read i32 @_ssdm_op_Read.ap_auto.volatile.i32P0A, i32 %iter"   --->   Operation 4 'read' 'iter_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %fft2_out1, void @empty_8, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %twiddle_out1, void @empty_8, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.42ns)   --->   "%br_ln310 = br void %for.cond" [fft_4k_ssr2_i16_c16_t16.cpp:310]   --->   Operation 7 'br' 'br_ln310' <Predicate = true> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 1.01>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%i = phi i31 0, void %entry, i31 %add_ln310, void %codeRepl" [fft_4k_ssr2_i16_c16_t16.cpp:310]   --->   Operation 8 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%zext_ln310 = zext i31 %i" [fft_4k_ssr2_i16_c16_t16.cpp:310]   --->   Operation 9 'zext' 'zext_ln310' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (1.01ns)   --->   "%icmp_ln310 = icmp_slt  i32 %zext_ln310, i32 %iter_read" [fft_4k_ssr2_i16_c16_t16.cpp:310]   --->   Operation 10 'icmp' 'icmp_ln310' <Predicate = true> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (1.00ns)   --->   "%add_ln310 = add i31 %i, i31 1" [fft_4k_ssr2_i16_c16_t16.cpp:310]   --->   Operation 11 'add' 'add_ln310' <Predicate = true> <Delay = 1.00> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln310 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i31 %i, i32 %iter_read, i32 0" [fft_4k_ssr2_i16_c16_t16.cpp:310]   --->   Operation 12 'specdataflowpipeline' 'specdataflowpipeline_ln310' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln310 = br i1 %icmp_ln310, void %for.end, void %codeRepl" [fft_4k_ssr2_i16_c16_t16.cpp:310]   --->   Operation 13 'br' 'br_ln310' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln305 = call void @dataflow_in_loop_VITIS_LOOP_310_1.130, i32 %twiddle_out1, i32 %fft2_out1" [fft_4k_ssr2_i16_c16_t16.cpp:305]   --->   Operation 14 'call' 'call_ln305' <Predicate = (icmp_ln310)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln318 = ret" [fft_4k_ssr2_i16_c16_t16.cpp:318]   --->   Operation 15 'ret' 'ret_ln318' <Predicate = (!icmp_ln310)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%speclooptripcount_ln312 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 2, i64 1" [fft_4k_ssr2_i16_c16_t16.cpp:312]   --->   Operation 16 'speclooptripcount' 'speclooptripcount_ln312' <Predicate = (icmp_ln310)> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%specloopname_ln310 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [fft_4k_ssr2_i16_c16_t16.cpp:310]   --->   Operation 17 'specloopname' 'specloopname_ln310' <Predicate = (icmp_ln310)> <Delay = 0.00>
+ST_3 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln305 = call void @dataflow_in_loop_VITIS_LOOP_310_1.130, i32 %twiddle_out1, i32 %fft2_out1" [fft_4k_ssr2_i16_c16_t16.cpp:305]   --->   Operation 18 'call' 'call_ln305' <Predicate = (icmp_ln310)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln310 = br void %for.cond" [fft_4k_ssr2_i16_c16_t16.cpp:310]   --->   Operation 19 'br' 'br_ln310' <Predicate = (icmp_ln310)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ twiddle_out1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ fft2_out1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ iter]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+iter_read                  (read                ) [ 0011]
+specinterface_ln0          (specinterface       ) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+br_ln310                   (br                  ) [ 0111]
+i                          (phi                 ) [ 0010]
+zext_ln310                 (zext                ) [ 0000]
+icmp_ln310                 (icmp                ) [ 0011]
+add_ln310                  (add                 ) [ 0111]
+specdataflowpipeline_ln310 (specdataflowpipeline) [ 0000]
+br_ln310                   (br                  ) [ 0000]
+ret_ln318                  (ret                 ) [ 0000]
+speclooptripcount_ln312    (speclooptripcount   ) [ 0000]
+specloopname_ln310         (specloopname        ) [ 0000]
+call_ln305                 (call                ) [ 0000]
+br_ln310                   (br                  ) [ 0111]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="twiddle_out1">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="twiddle_out1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="fft2_out1">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fft2_out1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="iter">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="iter"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.volatile.i32P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dataflow_parent_loop_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dataflow_in_loop_VITIS_LOOP_310_1.130"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_16"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1004" name="iter_read_read_fu_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="32" slack="0"/>
+<pin id="42" dir="0" index="1" bw="32" slack="0"/>
+<pin id="43" dir="1" index="2" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="iter_read/1 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1005" name="i_reg_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="31" slack="1"/>
+<pin id="48" dir="1" index="1" bw="31" slack="1"/>
+</pin_list>
+<bind>
+<opset="i (phireg) "/>
+</bind>
+</comp>
+
+<comp id="50" class="1004" name="i_phi_fu_50">
+<pin_list>
+<pin id="51" dir="0" index="0" bw="1" slack="1"/>
+<pin id="52" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="53" dir="0" index="2" bw="31" slack="0"/>
+<pin id="54" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="55" dir="1" index="4" bw="31" slack="0"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="i/2 "/>
+</bind>
+</comp>
+
+<comp id="57" class="1004" name="grp_dataflow_in_loop_VITIS_LOOP_310_1_130_fu_57">
+<pin_list>
+<pin id="58" dir="0" index="0" bw="0" slack="0"/>
+<pin id="59" dir="0" index="1" bw="32" slack="0"/>
+<pin id="60" dir="0" index="2" bw="32" slack="0"/>
+<pin id="61" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln305/2 "/>
+</bind>
+</comp>
+
+<comp id="65" class="1004" name="zext_ln310_fu_65">
+<pin_list>
+<pin id="66" dir="0" index="0" bw="31" slack="0"/>
+<pin id="67" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="zext_ln310/2 "/>
+</bind>
+</comp>
+
+<comp id="69" class="1004" name="icmp_ln310_fu_69">
+<pin_list>
+<pin id="70" dir="0" index="0" bw="31" slack="0"/>
+<pin id="71" dir="0" index="1" bw="32" slack="1"/>
+<pin id="72" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln310/2 "/>
+</bind>
+</comp>
+
+<comp id="74" class="1004" name="add_ln310_fu_74">
+<pin_list>
+<pin id="75" dir="0" index="0" bw="31" slack="0"/>
+<pin id="76" dir="0" index="1" bw="1" slack="0"/>
+<pin id="77" dir="1" index="2" bw="31" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln310/2 "/>
+</bind>
+</comp>
+
+<comp id="80" class="1005" name="iter_read_reg_80">
+<pin_list>
+<pin id="81" dir="0" index="0" bw="32" slack="1"/>
+<pin id="82" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="iter_read "/>
+</bind>
+</comp>
+
+<comp id="85" class="1005" name="icmp_ln310_reg_85">
+<pin_list>
+<pin id="86" dir="0" index="0" bw="1" slack="1"/>
+<pin id="87" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="icmp_ln310 "/>
+</bind>
+</comp>
+
+<comp id="89" class="1005" name="add_ln310_reg_89">
+<pin_list>
+<pin id="90" dir="0" index="0" bw="31" slack="0"/>
+<pin id="91" dir="1" index="1" bw="31" slack="0"/>
+</pin_list>
+<bind>
+<opset="add_ln310 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="44"><net_src comp="6" pin="0"/><net_sink comp="40" pin=0"/></net>
+
+<net id="45"><net_src comp="4" pin="0"/><net_sink comp="40" pin=1"/></net>
+
+<net id="49"><net_src comp="18" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="56"><net_src comp="46" pin="1"/><net_sink comp="50" pin=0"/></net>
+
+<net id="62"><net_src comp="26" pin="0"/><net_sink comp="57" pin=0"/></net>
+
+<net id="63"><net_src comp="0" pin="0"/><net_sink comp="57" pin=1"/></net>
+
+<net id="64"><net_src comp="2" pin="0"/><net_sink comp="57" pin=2"/></net>
+
+<net id="68"><net_src comp="50" pin="4"/><net_sink comp="65" pin=0"/></net>
+
+<net id="73"><net_src comp="65" pin="1"/><net_sink comp="69" pin=0"/></net>
+
+<net id="78"><net_src comp="50" pin="4"/><net_sink comp="74" pin=0"/></net>
+
+<net id="79"><net_src comp="20" pin="0"/><net_sink comp="74" pin=1"/></net>
+
+<net id="83"><net_src comp="40" pin="2"/><net_sink comp="80" pin=0"/></net>
+
+<net id="84"><net_src comp="80" pin="1"/><net_sink comp="69" pin=1"/></net>
+
+<net id="88"><net_src comp="69" pin="2"/><net_sink comp="85" pin=0"/></net>
+
+<net id="92"><net_src comp="74" pin="2"/><net_sink comp="89" pin=0"/></net>
+
+<net id="93"><net_src comp="89" pin="1"/><net_sink comp="50" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+	Port: fft_serial_kernel : iter | {1 }
+  - Chain level:
+	State 1
+	State 2
+		zext_ln310 : 1
+		icmp_ln310 : 2
+		add_ln310 : 1
+		specdataflowpipeline_ln310 : 1
+		br_ln310 : 3
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------------------|---------|---------|---------|---------|
+| Operation|                 Functional Unit                 |   BRAM  |   DSP   |    FF   |   LUT   |
+|----------|-------------------------------------------------|---------|---------|---------|---------|
+|   call   | grp_dataflow_in_loop_VITIS_LOOP_310_1_130_fu_57 |    8    |    0    |  11036  |   8833  |
+|----------|-------------------------------------------------|---------|---------|---------|---------|
+|   icmp   |                 icmp_ln310_fu_69                |    0    |    0    |    0    |    39   |
+|----------|-------------------------------------------------|---------|---------|---------|---------|
+|    add   |                 add_ln310_fu_74                 |    0    |    0    |    0    |    38   |
+|----------|-------------------------------------------------|---------|---------|---------|---------|
+|   read   |               iter_read_read_fu_40              |    0    |    0    |    0    |    0    |
+|----------|-------------------------------------------------|---------|---------|---------|---------|
+|   zext   |                 zext_ln310_fu_65                |    0    |    0    |    0    |    0    |
+|----------|-------------------------------------------------|---------|---------|---------|---------|
+|   Total  |                                                 |    8    |    0    |  11036  |   8910  |
+|----------|-------------------------------------------------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-----------------+--------+
+|                 |   FF   |
++-----------------+--------+
+| add_ln310_reg_89|   31   |
+|     i_reg_46    |   31   |
+|icmp_ln310_reg_85|    1   |
+| iter_read_reg_80|   32   |
++-----------------+--------+
+|      Total      |   95   |
++-----------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |    8   |    0   |  11036 |  8910  |
+|   Memory  |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |   95   |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |    8   |    0   |  11131 |  8910  |
++-----------+--------+--------+--------+--------+

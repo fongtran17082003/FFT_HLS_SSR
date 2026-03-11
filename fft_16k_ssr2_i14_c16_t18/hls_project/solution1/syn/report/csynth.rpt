@@ -1,0 +1,309 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fft_16k_ssr2_i14_c16_t18_top'
+================================================================
++ General Information: 
+    * Date:           Tue Mar  3 21:26:54 2026
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        hls_project
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+---------+-------------+-------------+-----+
+    |                         Modules                         | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |           |         |             |             |     |
+    |                         & Loops                         | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM    |   DSP   |      FF     |     LUT     | URAM|
+    +---------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+---------+-------------+-------------+-----+
+    |+ fft_16k_ssr2_i14_c16_t18_top                           |     -|  0.00|    24815|  2.482e+05|         -|    24816|     -|        no|  162 (56%)|  4 (~0%)|  33682 (14%)|  29870 (25%)|    -|
+    | + fft_core*                                             |     -|  0.00|    24813|  2.481e+05|         -|    24732|     -|  dataflow|  146 (50%)|  4 (~0%)|  31531 (13%)|  27681 (23%)|    -|
+    |  + dma_in                                               |     -|  0.00|     8268|  8.268e+04|         -|     8268|     -|        no|          -|        -|    282 (~0%)|    768 (~0%)|    -|
+    |   + dma_in_Pipeline_VITIS_LOOP_61_1                     |     -|  0.00|     8195|  8.195e+04|         -|     8195|     -|        no|          -|        -|     91 (~0%)|    133 (~0%)|    -|
+    |    o VITIS_LOOP_61_1                                    |     -|  7.30|     8193|  8.193e+04|         3|        1|  8192|       yes|          -|        -|            -|            -|    -|
+    |  + reorder                                              |     -|  3.62|    16392|  1.639e+05|         -|    16392|     -|        no|   64 (22%)|        -|    414 (~0%)|    1392 (1%)|    -|
+    |   + reorder_Pipeline_pipeup_l1_pipeup_l2                |     -|  4.22|     8194|  8.194e+04|         -|     8194|     -|        no|          -|        -|     33 (~0%)|    156 (~0%)|    -|
+    |    o pipeup_l1_pipeup_l2                                |     -|  7.30|     8192|  8.192e+04|         2|        1|  8192|       yes|          -|        -|            -|            -|    -|
+    |   o iter_loop_inner_loop                                |     -|  7.30|     8193|  8.193e+04|         3|        1|  8192|       yes|          -|        -|            -|            -|    -|
+    |  + radix2p                                              |     -|  2.77|     8196|  8.196e+04|         -|     8196|     -|        no|          -|        -|    119 (~0%)|    336 (~0%)|    -|
+    |   + radix2p_Pipeline_VITIS_LOOP_172_1_VITIS_LOOP_175_2  |     -|  2.77|     8194|  8.194e+04|         -|     8194|     -|        no|          -|        -|     49 (~0%)|    260 (~0%)|    -|
+    |    o VITIS_LOOP_172_1_VITIS_LOOP_175_2                  |     -|  7.30|     8192|  8.192e+04|         2|        1|  8192|       yes|          -|        -|            -|            -|    -|
+    |  + twiddle                                              |     -|  3.01|     8200|  8.200e+04|         -|     8200|     -|        no|    16 (5%)|  4 (~0%)|    369 (~0%)|    379 (~0%)|    -|
+    |   + twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2  |     -|  3.01|     8198|  8.198e+04|         -|     8198|     -|        no|    16 (5%)|  4 (~0%)|    299 (~0%)|    285 (~0%)|    -|
+    |    o VITIS_LOOP_264_1_VITIS_LOOP_267_2                  |     -|  7.30|     8196|  8.196e+04|         6|        1|  8192|       yes|          -|        -|            -|            -|    -|
+    |     + get_phase_factor                                  |     -|  6.06|        1|     10.000|         -|        1|     -|       yes|    16 (5%)|        -|      2 (~0%)|      2 (~0%)|    -|
+    |  + fft_serial_kernel_1_wrapper*                         |     -|  0.00|    24732|  2.473e+05|         -|    24732|     -|  dataflow|   33 (11%)|        -|   14177 (6%)|   11337 (9%)|    -|
+    |   + entry_proc74                                        |     -|  3.62|        0|      0.000|         -|        0|     -|        no|          -|        -|     34 (~0%)|     38 (~0%)|    -|
+    |   + fft_serial_kernel_1                                 |     -|  0.00|    24731|  2.473e+05|         -|    24731|     -|        no|   33 (11%)|        -|   14043 (5%)|   11221 (9%)|    -|
+    |    o VITIS_LOOP_310_1                                   |     -|  7.30|    24730|  2.473e+05|     24731|        -|     1|        no|          -|        -|            -|            -|    -|
+    |     + dataflow_in_loop_VITIS_LOOP_310_1*                |     -|  0.00|    24729|  2.473e+05|         -|    24728|     -|  dataflow|   33 (11%)|        -|   13535 (5%)|   11101 (9%)|    -|
+    |      + Block_newFuncRoot_proc_proc                      |     -|  5.46|        0|      0.000|         -|        0|     -|        no|          -|        -|     11 (~0%)|     20 (~0%)|    -|
+    |      + Block_newFuncRoot_proc_proc15                    |     -|  5.46|        0|      0.000|         -|        0|     -|        no|          -|        -|      3 (~0%)|     29 (~0%)|    -|
+    |      + fft_fft_params_2*                                |     -|  0.00|    24727|  2.473e+05|         -|    24728|     -|  dataflow|   33 (11%)|        -|   13222 (5%)|   10829 (9%)|    -|
+    |       + fft_syn_fft_params_s                            |     -|  5.30|    24727|  2.473e+05|         -|    24727|     -|        no|        N/A|      N/A|          N/A|          N/A|  N/A|
+    |      + Block_newFuncRoot_proc_proc16                    |     -|  5.46|        0|      0.000|         -|        0|     -|        no|          -|        -|      2 (~0%)|     20 (~0%)|    -|
+    |  + fft_serial_kernel_wrapper*                           |     -|  0.00|    24732|  2.473e+05|         -|    24732|     -|  dataflow|   33 (11%)|        -|   14176 (6%)|   11319 (9%)|    -|
+    |   + entry_proc107                                       |     -|  3.62|        0|      0.000|         -|        0|     -|        no|          -|        -|     34 (~0%)|     29 (~0%)|    -|
+    |   + fft_serial_kernel                                   |     -|  0.00|    24731|  2.473e+05|         -|    24731|     -|        no|   33 (11%)|        -|   14043 (5%)|   11221 (9%)|    -|
+    |    o VITIS_LOOP_310_1                                   |     -|  7.30|    24730|  2.473e+05|     24731|        -|     1|        no|          -|        -|            -|            -|    -|
+    |     + dataflow_in_loop_VITIS_LOOP_310_1_133*            |     -|  0.00|    24729|  2.473e+05|         -|    24728|     -|  dataflow|   33 (11%)|        -|   13535 (5%)|   11101 (9%)|    -|
+    |      + Block_newFuncRoot_proc_proc17                    |     -|  5.46|        0|      0.000|         -|        0|     -|        no|          -|        -|     11 (~0%)|     20 (~0%)|    -|
+    |      + Block_newFuncRoot_proc_proc18                    |     -|  5.46|        0|      0.000|         -|        0|     -|        no|          -|        -|      3 (~0%)|     29 (~0%)|    -|
+    |      + fft_fft_params_s*                                |     -|  0.00|    24727|  2.473e+05|         -|    24728|     -|  dataflow|   33 (11%)|        -|   13222 (5%)|   10829 (9%)|    -|
+    |       + fft_syn_fft_params_3                            |     -|  5.30|    24727|  2.473e+05|         -|    24727|     -|        no|        N/A|      N/A|          N/A|          N/A|  N/A|
+    |      + Block_newFuncRoot_proc_proc19                    |     -|  5.46|        0|      0.000|         -|        0|     -|        no|          -|        -|      2 (~0%)|     20 (~0%)|    -|
+    |  + joiner                                               |     -|  3.62|     8196|  8.196e+04|         -|     8196|     -|        no|          -|        -|    118 (~0%)|    249 (~0%)|    -|
+    |   + joiner_Pipeline_VITIS_LOOP_285_1_VITIS_LOOP_288_2   |     -|  3.62|     8194|  8.194e+04|         -|     8194|     -|        no|          -|        -|     49 (~0%)|    173 (~0%)|    -|
+    |    o VITIS_LOOP_285_1_VITIS_LOOP_288_2                  |     -|  7.30|     8192|  8.192e+04|         2|        1|  8192|       yes|          -|        -|            -|            -|    -|
+    |  + entry_proc                                           |     -|  5.37|        0|      0.000|         -|        0|     -|        no|          -|        -|      3 (~0%)|     29 (~0%)|    -|
+    |  + dma_out                                              |     -|  0.00|     8266|  8.266e+04|         -|     8266|     -|        no|          -|        -|    287 (~0%)|    769 (~0%)|    -|
+    |   + dma_out_Pipeline_VITIS_LOOP_90_1                    |     -|  0.00|     8195|  8.195e+04|         -|     8195|     -|        no|          -|        -|     99 (~0%)|    135 (~0%)|    -|
+    |    o VITIS_LOOP_90_1                                    |     -|  7.30|     8193|  8.193e+04|         3|        1|  8192|       yes|          -|        -|            -|            -|    -|
+    +---------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+---------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem1 | 56 -> 64   | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=8            |
+| m_axi_gmem2 | 64 -> 64   | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=8            |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | din_1    | 0x10   | 32    | W      | Data signal of din               |                                                                      |
+| s_axi_control | din_2    | 0x14   | 32    | W      | Data signal of din               |                                                                      |
+| s_axi_control | dout_1   | 0x1c   | 32    | W      | Data signal of dout              |                                                                      |
+| s_axi_control | dout_2   | 0x20   | 32    | W      | Data signal of dout              |                                                                      |
+| s_axi_control | iter     | 0x28   | 32    | W      | Data signal of iter              |                                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-------------+
+| Argument | Direction | Datatype    |
++----------+-----------+-------------+
+| din      | in        | ap_int<56>* |
+| dout     | out       | ap_int<64>* |
+| iter     | in        | int         |
++----------+-----------+-------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+----------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                          |
++----------+---------------+-----------+----------+----------------------------------+
+| din      | m_axi_gmem1   | interface |          |                                  |
+| din      | s_axi_control | register  | offset   | name=din_1 offset=0x10 range=32  |
+| din      | s_axi_control | register  | offset   | name=din_2 offset=0x14 range=32  |
+| dout     | m_axi_gmem2   | interface |          |                                  |
+| dout     | s_axi_control | register  | offset   | name=dout_1 offset=0x1c range=32 |
+| dout     | s_axi_control | register  | offset   | name=dout_2 offset=0x20 range=32 |
+| iter     | s_axi_control | register  |          | name=iter offset=0x28 range=32   |
++----------+---------------+-----------+----------+----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+----------+-------+-----------------+------------------------------------+
+| HW Interface | Direction | Length   | Width | Loop            | Loop Location                      |
++--------------+-----------+----------+-------+-----------------+------------------------------------+
+| m_axi_gmem1  | read      | variable | 64    | VITIS_LOOP_61_1 | fft_16k_ssr2_i14_c16_t18.cpp:61:22 |
+| m_axi_gmem2  | write     | variable | 64    | VITIS_LOOP_90_1 | fft_16k_ssr2_i14_c16_t18.cpp:90:22 |
++--------------+-----------+----------+-------+-----------------+------------------------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+-------------------------------------+-----------+--------------+----------+-----------------+------------------------------------+------------+-----------------------------------------------------------+
+| HW Interface | Variable | Access Location                     | Direction | Burst Status | Length   | Loop            | Loop Location                      | Resolution | Problem                                                   |
++--------------+----------+-------------------------------------+-----------+--------------+----------+-----------------+------------------------------------+------------+-----------------------------------------------------------+
+| m_axi_gmem1  | din      | fft_16k_ssr2_i14_c16_t18.cpp:66:34  | read      | Widen Fail   |          |                 |                                    |            | i56 allocated space contains padding. This is unsupported |
+| m_axi_gmem1  | din      | fft_16k_ssr2_i14_c16_t18.cpp:66:34  | read      | Inferred     | variable | VITIS_LOOP_61_1 | fft_16k_ssr2_i14_c16_t18.cpp:61:22 |            |                                                           |
+| m_axi_gmem2  | dout     | fft_16k_ssr2_i14_c16_t18.cpp:100:15 | write     | Widen Fail   |          | VITIS_LOOP_90_1 | fft_16k_ssr2_i14_c16_t18.cpp:90:22 | 214-234    | Sequential access length is not divisible by 2            |
+| m_axi_gmem2  | dout     | fft_16k_ssr2_i14_c16_t18.cpp:100:15 | write     | Inferred     | variable | VITIS_LOOP_90_1 | fft_16k_ssr2_i14_c16_t18.cpp:90:22 |            |                                                           |
++--------------+----------+-------------------------------------+-----------+--------------+----------+-----------------+------------------------------------+------------+-----------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------------------------+-----+--------+-------------+-----+-----------+---------+
+| Name                                                    | DSP | Pragma | Variable    | Op  | Impl      | Latency |
++---------------------------------------------------------+-----+--------+-------------+-----+-----------+---------+
+| + fft_16k_ssr2_i14_c16_t18_top                          | 4   |        |             |     |           |         |
+|  + fft_core                                             | 4   |        |             |     |           |         |
+|   + dma_in                                              | 0   |        |             |     |           |         |
+|    + dma_in_Pipeline_VITIS_LOOP_61_1                    | 0   |        |             |     |           |         |
+|      add_ln61_fu_126_p2                                 |     |        | add_ln61    | add | fabric    | 0       |
+|   + reorder                                             | 0   |        |             |     |           |         |
+|     sub_fu_400_p2                                       |     |        | sub         | add | fabric    | 0       |
+|     add_ln129_fu_417_p2                                 |     |        | add_ln129   | add | fabric    | 0       |
+|     j_2_fu_423_p2                                       |     |        | j_2         | add | fabric    | 0       |
+|     add_ln133_fu_532_p2                                 |     |        | add_ln133   | add | fabric    | 0       |
+|     add_ln141_fu_567_p2                                 |     |        | add_ln141   | add | fabric    | 0       |
+|     add_ln142_fu_591_p2                                 |     |        | add_ln142   | add | fabric    | 0       |
+|     r_1_fu_633_p2                                       |     |        | r_1         | add | fabric    | 0       |
+|     c_1_fu_639_p2                                       |     |        | c_1         | add | fabric    | 0       |
+|     add_ln135_fu_474_p2                                 |     |        | add_ln135   | add | fabric    | 0       |
+|    + reorder_Pipeline_pipeup_l1_pipeup_l2               | 0   |        |             |     |           |         |
+|      add_ln119_1_fu_156_p2                              |     |        | add_ln119_1 | add | fabric    | 0       |
+|      add_ln119_fu_173_p2                                |     |        | add_ln119   | add | fabric    | 0       |
+|      add_ln121_fu_243_p2                                |     |        | add_ln121   | add | fabric    | 0       |
+|   + radix2p                                             | 0   |        |             |     |           |         |
+|    + radix2p_Pipeline_VITIS_LOOP_172_1_VITIS_LOOP_175_2 | 0   |        |             |     |           |         |
+|      add_ln172_fu_94_p2                                 |     |        | add_ln172   | add | fabric    | 0       |
+|      a_fu_147_p2                                        |     |        | a           | add | fabric    | 0       |
+|      b_fu_161_p2                                        |     |        | b           | add | fabric    | 0       |
+|      c_fu_167_p2                                        |     |        | c           | sub | fabric    | 0       |
+|      d_fu_173_p2                                        |     |        | d           | sub | fabric    | 0       |
+|   + twiddle                                             | 4   |        |             |     |           |         |
+|    + twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2 | 4   |        |             |     |           |         |
+|      add_ln264_fu_129_p2                                |     |        | add_ln264   | add | fabric    | 0       |
+|      mul_18s_16s_32_1_1_U31                             | 1   |        | mul_ln50    | mul | auto      | 0       |
+|      mac_mulsub_18s_16s_32s_32_4_1_U33                  | 1   |        | mul_ln50_1  | mul | dsp_slice | 3       |
+|      mac_mulsub_18s_16s_32s_32_4_1_U33                  | 1   |        | val_M_real  | sub | dsp_slice | 3       |
+|      mul_18s_16s_32_1_1_U32                             | 1   |        | mul_ln51    | mul | auto      | 0       |
+|      mac_muladd_18s_16s_32s_32_4_1_U34                  | 1   |        | mul_ln51_1  | mul | dsp_slice | 3       |
+|      mac_muladd_18s_16s_32s_32_4_1_U34                  | 1   |        | val_M_imag  | add | dsp_slice | 3       |
+|      i_1_fu_162_p2                                      |     |        | i_1         | add | fabric    | 0       |
+|   + joiner                                              | 0   |        |             |     |           |         |
+|    + joiner_Pipeline_VITIS_LOOP_285_1_VITIS_LOOP_288_2  | 0   |        |             |     |           |         |
+|      add_ln285_fu_86_p2                                 |     |        | add_ln285   | add | fabric    | 0       |
+|   + dma_out                                             | 0   |        |             |     |           |         |
+|    + dma_out_Pipeline_VITIS_LOOP_90_1                   | 0   |        |             |     |           |         |
+|      add_ln90_fu_112_p2                                 |     |        | add_ln90    | add | fabric    | 0       |
++---------------------------------------------------------+-----+--------+-------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------------------------------------------------+---------------+-------------+------+------+--------+--------------+------+---------+------------------+
+| Name                                                    | Usage         | Type        | BRAM | URAM | Pragma | Variable     | Impl | Latency | Bitwidth, Depth, |
+|                                                         |               |             |      |      |        |              |      |         | Banks            |
++---------------------------------------------------------+---------------+-------------+------+------+--------+--------------+------+---------+------------------+
+| + fft_16k_ssr2_i14_c16_t18_top                          |               |             | 162  | 0    |        |              |      |         |                  |
+|   control_s_axi_U                                       | interface     | s_axilite   |      |      |        |              |      |         |                  |
+|   gmem1_m_axi_U                                         | interface     | m_axi       | 8    |      |        |              |      |         |                  |
+|   gmem2_m_axi_U                                         | interface     | m_axi       | 8    |      |        |              |      |         |                  |
+|  + fft_core                                             |               |             | 146  | 0    |        |              |      |         |                  |
+|    dout_c_U                                             | fifo channel  | scalar prop |      |      |        | dout_c       | srl  | 0       | 64, 8, 1         |
+|    input_stream_U                                       | fifo channel  | stream      |      |      |        | input_stream | srl  | 0       | 64, 2, 1         |
+|    iter_c25_U                                           | fifo channel  | scalar prop |      |      |        | iter_c25     | srl  | 0       | 32, 2, 1         |
+|    reorder_out_U                                        | fifo channel  | stream      |      |      |        | reorder_out  | srl  | 0       | 64, 2, 1         |
+|    iter_c24_U                                           | fifo channel  | scalar prop |      |      |        | iter_c24     | srl  | 0       | 32, 2, 1         |
+|    fft1_out_U                                           | fifo channel  | stream      |      |      |        | fft1_out     | srl  | 0       | 64, 2, 1         |
+|    iter_c23_U                                           | fifo channel  | scalar prop |      |      |        | iter_c23     | srl  | 0       | 32, 2, 1         |
+|    twiddle_out0_U                                       | fifo channel  | stream      |      |      |        | twiddle_out0 | srl  | 0       | 32, 2, 1         |
+|    twiddle_out1_U                                       | fifo channel  | stream      |      |      |        | twiddle_out1 | srl  | 0       | 32, 2, 1         |
+|    iter_c21_U                                           | fifo channel  | scalar prop |      |      |        | iter_c21     | srl  | 0       | 32, 2, 1         |
+|    iter_c22_U                                           | fifo channel  | scalar prop |      |      |        | iter_c22     | srl  | 0       | 32, 2, 1         |
+|    fft2_out0_U                                          | fifo channel  | stream      |      |      |        | fft2_out0    | srl  | 0       | 32, 2, 1         |
+|    iter_c20_U                                           | fifo channel  | scalar prop |      |      |        | iter_c20     | srl  | 0       | 32, 2, 1         |
+|    fft2_out1_U                                          | fifo channel  | stream      |      |      |        | fft2_out1    | srl  | 0       | 32, 2, 1         |
+|    joiner_out_U                                         | fifo channel  | stream      |      |      |        | joiner_out   | srl  | 0       | 64, 2, 1         |
+|    iter_c_U                                             | fifo channel  | scalar prop |      |      |        | iter_c       | srl  | 0       | 18, 2, 1         |
+|   + reorder                                             |               |             | 64   | 0    |        |              |      |         |                  |
+|     buff_0_0_U                                          | ram_s2p array |             | 16   |      |        | buff_0_0     | auto | 1       | 32, 8192, 1      |
+|     buff_0_1_U                                          | ram_s2p array |             | 16   |      |        | buff_0_1     | auto | 1       | 32, 8192, 1      |
+|     buff_1_0_U                                          | ram_s2p array |             | 16   |      |        | buff_1_0     | auto | 1       | 32, 8192, 1      |
+|     buff_1_1_U                                          | ram_s2p array |             | 16   |      |        | buff_1_1     | auto | 1       | 32, 8192, 1      |
+|   + twiddle                                             |               |             | 16   | 0    |        |              |      |         |                  |
+|    + twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2 |               |             | 16   | 0    |        |              |      |         |                  |
+|     + get_phase_factor                                  |               |             | 16   | 0    |        |              |      |         |                  |
+|       w_lut_U                                           | rom_1p        |             | 16   |      |        | w_lut        | auto | 1       | 35, 8192, 1      |
+|   + fft_serial_kernel_1_wrapper                         |               |             | 33   | 0    |        |              |      |         |                  |
+|     p_channel_U                                         | fifo channel  | task level  |      |      |        | p_channel    | srl  | 0       | 32, 2, 1         |
+|    + fft_serial_kernel_1                                |               |             | 33   | 0    |        |              |      |         |                  |
+|     + dataflow_in_loop_VITIS_LOOP_310_1                 |               |             | 33   | 0    |        |              |      |         |                  |
+|       empty_U                                           | fifo channel  | task level  |      |      |        | empty        | srl  | 0       | 16, 2, 1         |
+|       fft_config_U                                      | fifo channel  | stream      |      |      |        | fft_config   | srl  | 0       | 16, 2, 1         |
+|       fft_status_U                                      | fifo channel  | stream      |      |      |        | fft_status   | srl  | 0       | 8, 2, 1          |
+|   + fft_serial_kernel_wrapper                           |               |             | 33   | 0    |        |              |      |         |                  |
+|     p_channel_U                                         | fifo channel  | task level  |      |      |        | p_channel    | srl  | 0       | 32, 2, 1         |
+|    + fft_serial_kernel                                  |               |             | 33   | 0    |        |              |      |         |                  |
+|     + dataflow_in_loop_VITIS_LOOP_310_1_133             |               |             | 33   | 0    |        |              |      |         |                  |
+|       empty_U                                           | fifo channel  | task level  |      |      |        | empty        | srl  | 0       | 16, 2, 1         |
+|       fft_config_U                                      | fifo channel  | stream      |      |      |        | fft_config   | srl  | 0       | 16, 2, 1         |
+|       fft_status_U                                      | fifo channel  | stream      |      |      |        | fft_status   | srl  | 0       | 8, 2, 1          |
++---------------------------------------------------------+---------------+-------------+------+------+--------+--------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+---------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type     | Options | Location                                     | Messages                                                                                                                                                                           |
++----------+---------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dataflow |         | fft_16k_ssr2_i14_c16_t18.cpp:325 in fft_core | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region |
++----------+---------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| Type            | Options                                                                  | Location                                                                 |
++-----------------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| array_reshape   | dim=1 type=complete variable=w_lut                                       | ./fft_16k_ssr2_i14_c16_t18.hpp:1095 in get_phase_factor, w_lut           |
+| aggregate       | compact=auto variable=w_lut                                              | ./fft_16k_ssr2_i14_c16_t18.hpp:1096 in get_phase_factor, w_lut           |
+| inline          | off                                                                      | ./fft_16k_ssr2_i14_c16_t18.hpp:1097 in get_phase_factor                  |
+| loop_tripcount  | max=FFT_ITER*FFT_SIZE/2                                                  | fft_16k_ssr2_i14_c16_t18.cpp:63 in dma_in                                |
+| loop_tripcount  | max=FFT_ITER*FFT_SIZE/2                                                  | fft_16k_ssr2_i14_c16_t18.cpp:92 in dma_out                               |
+| aggregate       | compact=auto variable=buff                                               | fft_16k_ssr2_i14_c16_t18.cpp:115 in reorder, buff                        |
+| array_partition | dim=2 type=complete variable=buff                                        | fft_16k_ssr2_i14_c16_t18.cpp:116 in reorder, buff                        |
+| array_partition | dim=3 type=cyclic factor=2 variable=buff                                 | fft_16k_ssr2_i14_c16_t18.cpp:117 in reorder, buff                        |
+| loop_tripcount  | max=FFT_ITER                                                             | fft_16k_ssr2_i14_c16_t18.cpp:131 in reorder                              |
+| pipeline        | II=1 rewind                                                              | fft_16k_ssr2_i14_c16_t18.cpp:137 in reorder                              |
+| loop_tripcount  | max=FFT_ITER                                                             | fft_16k_ssr2_i14_c16_t18.cpp:174 in radix2p                              |
+| pipeline        | II=1                                                                     | fft_16k_ssr2_i14_c16_t18.cpp:177 in radix2p                              |
+| loop_tripcount  | max=FFT_ITER                                                             | fft_16k_ssr2_i14_c16_t18.cpp:206 in radix4s                              |
+| pipeline        | II=4                                                                     | fft_16k_ssr2_i14_c16_t18.cpp:207 in radix4s                              |
+| loop_tripcount  | max=FFT_ITER                                                             | fft_16k_ssr2_i14_c16_t18.cpp:266 in twiddle                              |
+| pipeline        | II=1                                                                     | fft_16k_ssr2_i14_c16_t18.cpp:269 in twiddle                              |
+| loop_tripcount  | max=FFT_ITER                                                             | fft_16k_ssr2_i14_c16_t18.cpp:287 in joiner                               |
+| pipeline        | II=1                                                                     | fft_16k_ssr2_i14_c16_t18.cpp:290 in joiner                               |
+| loop_tripcount  | max=FFT_ITER                                                             | fft_16k_ssr2_i14_c16_t18.cpp:312 in fft_serial_kernel                    |
+| dataflow        |                                                                          | fft_16k_ssr2_i14_c16_t18.cpp:313 in fft_serial_kernel                    |
+| interface       | mode=s_axilite port=iter                                                 | fft_16k_ssr2_i14_c16_t18.cpp:364 in fft_16k_ssr2_i14_c16_t18_top, iter   |
+| interface       | mode=s_axilite port=return                                               | fft_16k_ssr2_i14_c16_t18.cpp:365 in fft_16k_ssr2_i14_c16_t18_top, return |
+| interface       | mode=m_axi bundle=gmem2 depth=sim_depth max_widen_bitwidth=512 port=dout | fft_16k_ssr2_i14_c16_t18.cpp:366 in fft_16k_ssr2_i14_c16_t18_top, dout   |
+| interface       | mode=m_axi bundle=gmem1 depth=sim_depth max_widen_bitwidth=512 port=din  | fft_16k_ssr2_i14_c16_t18.cpp:367 in fft_16k_ssr2_i14_c16_t18_top, din    |
++-----------------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+
+
+

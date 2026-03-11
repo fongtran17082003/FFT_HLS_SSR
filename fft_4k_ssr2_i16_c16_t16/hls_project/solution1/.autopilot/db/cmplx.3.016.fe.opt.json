@@ -1,0 +1,209 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "14",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 359,
+    "instructions": 15,
+    "name": "fft_4k_ssr2_i16_c16_t16_top",
+    "total_instructions": 852
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "7",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 255,
+    "instructions": 89,
+    "loads": {
+      "L": 3
+    },
+    "name": "twiddle",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 99
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 696,
+    "instructions": 5,
+    "name": "fft<fft_4k_ssr2_i16_c16_t16::fft_params>",
+    "total_instructions": 41
+  },
+  "11": {
+    "basicblocks": 4,
+    "calls": "12",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 299,
+    "instructions": 11,
+    "name": "fft_serial_kernel",
+    "total_instructions": 66
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 0,
+    "instructions": 14,
+    "name": "_ZN23fft_4k_ssr2_i16_c16_t1617fft_serial_kernelERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEES9_i_for.inc",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 55
+  },
+  "13": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 166,
+    "instructions": 113,
+    "loads": {
+      "L": 1
+    },
+    "name": "radix2p",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 113
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "8 4 13 1 9 11 3 16",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 320,
+    "instructions": 39,
+    "name": "fft_core",
+    "total_instructions": 837
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 696,
+    "instructions": 5,
+    "name": "fft<fft_4k_ssr2_i16_c16_t16::fft_params>",
+    "total_instructions": 41
+  },
+  "16": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 86,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "name": "dma_out",
+    "total_instructions": 55
+  },
+  "2": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 509,
+    "instructions": 36,
+    "loads": {
+      "L": 2
+    },
+    "name": "fft_syn<fft_4k_ssr2_i16_c16_t16::fft_params>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 36
+  },
+  "3": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 280,
+    "instructions": 71,
+    "loads": {
+      "L": 2
+    },
+    "name": "joiner",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 71
+  },
+  "4": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 105,
+    "instructions": 272,
+    "loads": {
+      "L": 6
+    },
+    "name": "reorder",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 272
+  },
+  "5": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 509,
+    "instructions": 36,
+    "loads": {
+      "L": 2
+    },
+    "name": "fft_syn<fft_4k_ssr2_i16_c16_t16::fft_params>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 36
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "15",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 0,
+    "instructions": 14,
+    "name": "_ZN23fft_4k_ssr2_i16_c16_t1617fft_serial_kernelERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEES9_i.97_for.inc",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 55
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.hpp",
+    "fileloc": 325,
+    "instructions": 10,
+    "loads": {
+      "G": 1
+    },
+    "name": "get_phase_factor",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 10
+  },
+  "8": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 57,
+    "instructions": 56,
+    "name": "dma_in",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 56
+  },
+  "9": {
+    "basicblocks": 4,
+    "calls": "6",
+    "file": "fft_4k_ssr2_i16_c16_t16.cpp",
+    "fileloc": 299,
+    "instructions": 11,
+    "name": "fft_serial_kernel",
+    "total_instructions": 66
+  }
+}

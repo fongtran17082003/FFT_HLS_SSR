@@ -1,0 +1,197 @@
+
+
+================================================================
+== Vitis HLS Report for 'twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2'
+================================================================
+* Date:           Mon Mar  9 10:31:59 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  0.20 us|  4.218 ns|    54.00 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+------+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   | min |  max |   Type  |
+    +---------+---------+----------+----------+-----+------+---------+
+    |        2|     4102|  0.400 us|  0.820 ms|    2|  4102|       no|
+    +---------+---------+----------+----------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------+------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                             |                  |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |           Instance          |      Module      |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-----------------------------+------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_get_phase_factor_fu_106  |get_phase_factor  |        1|        1|  0.200 us|  0.200 us|    1|    1|      yes|
+        +-----------------------------+------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +-------------------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_264_1_VITIS_LOOP_267_2  |        0|     4100|         6|          1|          1|  0 ~ 4096|       yes|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     2|       -|       -|    -|
+|Expression       |        -|     -|       0|     158|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        4|     2|       2|      12|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      72|    -|
+|Register         |        -|     -|     285|      32|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        4|     4|     287|     274|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        1|    ~0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+--------------------+---------+----+---+----+-----+
+    |           Instance          |       Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +-----------------------------+--------------------+---------+----+---+----+-----+
+    |grp_get_phase_factor_fu_106  |get_phase_factor    |        4|   0|  2|   2|    0|
+    |mul_16s_16s_30_1_1_U31       |mul_16s_16s_30_1_1  |        0|   1|  0|   5|    0|
+    |mul_16s_16s_30_1_1_U32       |mul_16s_16s_30_1_1  |        0|   1|  0|   5|    0|
+    +-----------------------------+--------------------+---------+----+---+----+-----+
+    |Total                        |                    |        4|   2|  2|  12|    0|
+    +-----------------------------+--------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    +-----------------------------------+-------------------------------+--------------+
+    |              Instance             |             Module            |  Expression  |
+    +-----------------------------------+-------------------------------+--------------+
+    |mac_muladd_16s_16s_30s_30_4_1_U34  |mac_muladd_16s_16s_30s_30_4_1  |  i0 + i1 * i2|
+    |mac_mulsub_16s_16s_30s_30_4_1_U33  |mac_mulsub_16s_16s_30s_30_4_1  |  i0 - i1 * i2|
+    +-----------------------------------+-------------------------------+--------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------------------+----------+----+---+----+------------+------------+
+    |               Variable Name              | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------+----------+----+---+----+------------+------------+
+    |add_ln264_fu_131_p2                       |         +|   0|  0|  50|          43|           1|
+    |i_1_fu_164_p2                             |         +|   0|  0|  19|          12|           1|
+    |icmp_ln264_fu_126_p2                      |      icmp|   0|  0|  50|          43|          43|
+    |icmp_ln267_fu_145_p2                      |      icmp|   0|  0|  20|          12|          13|
+    |ap_block_pp0_stage0_01001                 |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001_ignoreCallOp27  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state7_pp0_stage0_iter6          |        or|   0|  0|   2|           1|           1|
+    |select_ln264_fu_151_p3                    |    select|   0|  0|  11|           1|           1|
+    |ap_enable_pp0                             |       xor|   0|  0|   2|           1|           2|
+    +------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                     |          |   0|  0| 158|         115|          64|
+    +------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
+    |fft1_out_blk_n           |   9|          2|    1|          2|
+    |i_fu_72                  |   9|          2|   12|         24|
+    |indvar_flatten_fu_76     |   9|          2|   43|         86|
+    |twiddle_out0_blk_n       |   9|          2|    1|          2|
+    |twiddle_out1_blk_n       |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  72|         16|   61|        122|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------+----+----+-----+-----------+
+    |                   Name                   | FF | LUT| Bits| Const Bits|
+    +------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                 |   1|   0|    1|          0|
+    |ap_done_reg                               |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6                   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg          |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg          |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg          |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg          |   1|   0|    1|          0|
+    |grp_get_phase_factor_fu_106_ap_start_reg  |   1|   0|    1|          0|
+    |i_fu_72                                   |  12|   0|   12|          0|
+    |icmp_ln264_reg_297                        |   1|   0|    1|          0|
+    |indvar_flatten_fu_76                      |  43|   0|   43|          0|
+    |mul_ln50_reg_317                          |  30|   0|   30|          0|
+    |mul_ln50_reg_317_pp0_iter4_reg            |  30|   0|   30|          0|
+    |mul_ln51_reg_322                          |  30|   0|   30|          0|
+    |mul_ln51_reg_322_pp0_iter4_reg            |  30|   0|   30|          0|
+    |trunc_ln274_reg_327                       |  32|   0|   32|          0|
+    |trunc_ln274_reg_327                       |  64|  32|   32|          0|
+    +------------------------------------------+----+----+-----+-----------+
+    |Total                                     | 285|  32|  253|          0|
+    +------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |                    Source Object                   |    C Type    |
++-----------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|ap_clk                       |   in|    1|  ap_ctrl_hs|  twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2|  return value|
+|ap_rst                       |   in|    1|  ap_ctrl_hs|  twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2|  return value|
+|ap_start                     |   in|    1|  ap_ctrl_hs|  twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2|  return value|
+|ap_done                      |  out|    1|  ap_ctrl_hs|  twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2|  return value|
+|ap_idle                      |  out|    1|  ap_ctrl_hs|  twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2|  return value|
+|ap_ready                     |  out|    1|  ap_ctrl_hs|  twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2|  return value|
+|fft1_out_dout                |   in|   64|     ap_fifo|                                            fft1_out|       pointer|
+|fft1_out_num_data_valid      |   in|    3|     ap_fifo|                                            fft1_out|       pointer|
+|fft1_out_fifo_cap            |   in|    3|     ap_fifo|                                            fft1_out|       pointer|
+|fft1_out_empty_n             |   in|    1|     ap_fifo|                                            fft1_out|       pointer|
+|fft1_out_read                |  out|    1|     ap_fifo|                                            fft1_out|       pointer|
+|twiddle_out0_din             |  out|   32|     ap_fifo|                                        twiddle_out0|       pointer|
+|twiddle_out0_num_data_valid  |   in|    3|     ap_fifo|                                        twiddle_out0|       pointer|
+|twiddle_out0_fifo_cap        |   in|    3|     ap_fifo|                                        twiddle_out0|       pointer|
+|twiddle_out0_full_n          |   in|    1|     ap_fifo|                                        twiddle_out0|       pointer|
+|twiddle_out0_write           |  out|    1|     ap_fifo|                                        twiddle_out0|       pointer|
+|twiddle_out1_din             |  out|   32|     ap_fifo|                                        twiddle_out1|       pointer|
+|twiddle_out1_num_data_valid  |   in|    3|     ap_fifo|                                        twiddle_out1|       pointer|
+|twiddle_out1_fifo_cap        |   in|    3|     ap_fifo|                                        twiddle_out1|       pointer|
+|twiddle_out1_full_n          |   in|    1|     ap_fifo|                                        twiddle_out1|       pointer|
+|twiddle_out1_write           |  out|    1|     ap_fifo|                                        twiddle_out1|       pointer|
+|bound                        |   in|   43|     ap_none|                                               bound|        scalar|
++-----------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+

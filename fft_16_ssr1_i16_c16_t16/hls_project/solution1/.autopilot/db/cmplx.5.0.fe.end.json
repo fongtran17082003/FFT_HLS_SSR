@@ -1,0 +1,179 @@
+{
+    "0": {
+        "name": "fft_16_ssr1_i16_c16_t16_top",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "195",
+        "instructions": "18",
+        "total_instructions": "248",
+        "calls": "1",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "fft_core",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "168",
+        "instructions": "26",
+        "total_instructions": "230",
+        "calls": "12 11 6 5",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "fft_syn<fft_16_ssr1_i16_c16_t16::fft_params>",
+        "file": "hls_fft_x_complex.h",
+        "fileloc": "509",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "fft<fft_16_ssr1_i16_c16_t16::fft_params>",
+        "file": "hls_fft_x_complex.h",
+        "fileloc": "696",
+        "instructions": "8",
+        "total_instructions": "38",
+        "calls": "2",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "_ZN23fft_16_ssr1_i16_c16_t1617fft_serial_kernelERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEES9_i_for.inc",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "62",
+        "calls": "15 13 3 8",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "dma_out",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "189",
+        "instructions": "19",
+        "total_instructions": "54",
+        "calls": "9",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "fft_serial_kernel.wrapper",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "186",
+        "instructions": "9",
+        "total_instructions": "93",
+        "calls": "7 14",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "entry_proc42",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "0",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "Block_newFuncRoot_proc_proc6",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "164",
+        "instructions": "3",
+        "total_instructions": "3",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "9": {
+        "name": "dma_out_Pipeline_VITIS_LOOP_78_1",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "189",
+        "instructions": "35",
+        "total_instructions": "35",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "dma_in_Pipeline_VITIS_LOOP_53_1",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "178",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "dma_in",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "178",
+        "instructions": "19",
+        "total_instructions": "53",
+        "calls": "10",
+        "basicblocks": "1"
+    },
+    "12": {
+        "name": "entry_proc",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "13": {
+        "name": "Block_newFuncRoot_proc_proc5",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "162",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "fft_serial_kernel",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "149",
+        "instructions": "15",
+        "total_instructions": "77",
+        "calls": "4",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "Block_newFuncRoot_proc_proc",
+        "file": "fft_16_ssr1_i16_c16_t16.cpp",
+        "fileloc": "162",
+        "instructions": "2",
+        "total_instructions": "2",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}

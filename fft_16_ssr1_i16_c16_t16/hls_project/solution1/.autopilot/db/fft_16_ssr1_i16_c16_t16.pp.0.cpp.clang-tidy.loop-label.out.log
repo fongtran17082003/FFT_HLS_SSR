@@ -1,0 +1,818 @@
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:36430:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:36430:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:37404:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:37404:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:37418:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:37418:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:37432:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:37432:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:39061:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:39061:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41189:7: warning: Added loop label VITIS_LOOP_446_1:   [xilinx-label-all-loops]
+      for (int i = 0; i < FFT_LENGTH; ++i)
+      ^~~
+      VITIS_LOOP_446_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41189:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41191:4: warning: Added loop label VITIS_LOOP_448_2:   [xilinx-label-all-loops]
+   for (int c = 0; c < FFT_CHANNELS; ++c)
+   ^~~
+   VITIS_LOOP_448_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41191:4: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41255:7: warning: Added loop label VITIS_LOOP_830_1:   [xilinx-label-all-loops]
+      for (int i = 0; i < FFT_LENGTH; ++i)
+      ^~~
+      VITIS_LOOP_830_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41255:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41766:7: warning: Added loop label VITIS_LOOP_89_1:   [xilinx-label-all-loops]
+      for (int i = 0; i < FFT_LENGTH; ++i)
+      ^~~
+      VITIS_LOOP_89_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41766:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41768:4: warning: Added loop label VITIS_LOOP_91_2:   [xilinx-label-all-loops]
+   for (int c = 0; c < FFT_CHANNELS; ++c)
+   ^~~
+   VITIS_LOOP_91_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41768:4: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41832:7: warning: Added loop label VITIS_LOOP_474_1:   [xilinx-label-all-loops]
+      for (int i = 0; i < FFT_LENGTH; ++i)
+      ^~~
+      VITIS_LOOP_474_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41832:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41896:7: warning: Added loop label VITIS_LOOP_559_1:   [xilinx-label-all-loops]
+      for (int i = 0; i < FFT_LENGTH; ++i)
+      ^~~
+      VITIS_LOOP_559_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41896:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41961:7: warning: Added loop label VITIS_LOOP_624_1:   [xilinx-label-all-loops]
+      for (int i = 0; i < FFT_LENGTH; ++i)
+      ^~~
+      VITIS_LOOP_624_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:41961:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42002:5: warning: Added loop label VITIS_LOOP_665_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < (1 << CONFIG_T::max_nfft); i++) {
+    ^~~
+    VITIS_LOOP_665_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42002:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42017:5: warning: Added loop label VITIS_LOOP_680_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < (1 << CONFIG_T::max_nfft); i++) {
+    ^~~
+    VITIS_LOOP_680_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42017:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42114:5: warning: Added loop label VITIS_LOOP_792_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < (1 << CONFIG_T::max_nfft); i++) {
+    ^~~
+    VITIS_LOOP_792_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42114:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42129:5: warning: Added loop label VITIS_LOOP_807_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < (1 << CONFIG_T::max_nfft); i++) {
+    ^~~
+    VITIS_LOOP_807_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42129:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42190:7: warning: Added loop label VITIS_LOOP_868_1:   [xilinx-label-all-loops]
+      for (int i = 0; i < FFT_LENGTH; ++i) {
+      ^~~
+      VITIS_LOOP_868_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42190:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42246:7: warning: Added loop label VITIS_LOOP_924_1:   [xilinx-label-all-loops]
+      for (int i = 0; i < FFT_LENGTH; ++i) {
+      ^~~
+      VITIS_LOOP_924_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:42246:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45802:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45803:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45804:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45805:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45806:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45836:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45837:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45838:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45839:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45840:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45841:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45842:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45843:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45844:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45845:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45895:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45896:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45897:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45924:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45925:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45926:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45927:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45928:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45929:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45965:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:45966:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46240:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_61_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46240:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46286:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_117_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46286:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46449:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_289_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46449:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46601:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_449_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46601:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46781:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_629_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46781:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46785:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_633_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46785:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46895:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_743_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46895:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46985:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_840_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:46985:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47004:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_859_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47004:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47294:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1173_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47294:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47377:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1256_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47377:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47783:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_68_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47783:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47789:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_74_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47789:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47793:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_78_3: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47793:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47841:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_145_4: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47841:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47847:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_151_5: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47847:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47851:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_155_6: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47851:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47866:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_170_7: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47866:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47874:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_178_8: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47874:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47939:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_243_9: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47939:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47945:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_249_10: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47945:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47949:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_253_11: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47949:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47964:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_268_12: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47964:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47972:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_276_13: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:47972:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48201:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_505_14: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48201:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48207:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_511_15: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48207:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48211:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_515_16: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48211:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48221:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_525_17: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48221:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48225:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_529_18: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48225:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48235:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_539_19: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48235:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48243:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_547_20: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48243:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48604:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_908_21: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48604:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48610:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_914_22: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48610:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48614:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_918_23: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48614:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48730:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1034_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48730:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48736:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1040_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48736:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48740:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1044_3: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48740:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48827:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1131_4: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48827:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48833:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1137_5: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48833:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48837:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1141_6: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48837:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48856:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1160_7: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48856:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48863:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1167_8: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48863:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48979:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1283_9: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48979:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48985:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1289_10: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48985:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48989:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1293_11: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:48989:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49009:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1313_12: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49009:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49016:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1320_13: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49016:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49278:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1582_14: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49278:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49284:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1588_15: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49284:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49288:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1592_16: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49288:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49312:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1616_17: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49312:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49319:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1623_18: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49319:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49749:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2053_19: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49749:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49755:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2059_20: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49755:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49759:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2063_21: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49759:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49889:13: warning: Added loop label VITIS_LOOP_2193_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2193_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49889:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49896:17: warning: Added loop label VITIS_LOOP_2200_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2200_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49896:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49900:17: warning: Added loop label VITIS_LOOP_2204_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2204_3: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49900:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49947:13: warning: Added loop label VITIS_LOOP_2251_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2251_4: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49947:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49954:17: warning: Added loop label VITIS_LOOP_2258_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2258_5: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49954:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49958:17: warning: Added loop label VITIS_LOOP_2262_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2262_6: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49958:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49976:9: warning: Added loop label VITIS_LOOP_2280_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2280_7: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:49976:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50031:13: warning: Added loop label VITIS_LOOP_2335_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2335_8: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50031:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50038:17: warning: Added loop label VITIS_LOOP_2342_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2342_9: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50038:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50042:17: warning: Added loop label VITIS_LOOP_2346_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2346_10: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50042:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50060:9: warning: Added loop label VITIS_LOOP_2364_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2364_11: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50060:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50149:13: warning: Added loop label VITIS_LOOP_2453_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2453_12: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50149:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50156:17: warning: Added loop label VITIS_LOOP_2460_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2460_13: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50156:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50160:17: warning: Added loop label VITIS_LOOP_2464_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2464_14: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50160:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50170:9: warning: Added loop label VITIS_LOOP_2474_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2474_15: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50170:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50174:9: warning: Added loop label VITIS_LOOP_2478_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2478_16: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50174:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50185:9: warning: Added loop label VITIS_LOOP_2489_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2489_17: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50185:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50193:17: warning: Added loop label VITIS_LOOP_2497_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2497_18: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50193:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50518:13: warning: Added loop label VITIS_LOOP_2822_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2822_19: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50518:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50525:17: warning: Added loop label VITIS_LOOP_2829_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2829_20: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50525:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50529:17: warning: Added loop label VITIS_LOOP_2833_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2833_21: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50529:17: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50617:4: warning: Added loop label VITIS_LOOP_2921_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2921_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50617:4: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50624:5: warning: Added loop label VITIS_LOOP_2928_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2928_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50624:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50628:5: warning: Added loop label VITIS_LOOP_2932_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2932_3: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50628:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50643:3: warning: Added loop label VITIS_LOOP_2947_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2947_4: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50643:3: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50675:4: warning: Added loop label VITIS_LOOP_2979_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_2979_5: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50675:4: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50682:5: warning: Added loop label VITIS_LOOP_2986_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_2986_6: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50682:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50686:5: warning: Added loop label VITIS_LOOP_2990_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2990_7: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50686:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50701:3: warning: Added loop label VITIS_LOOP_3005_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3005_8: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50701:3: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50751:4: warning: Added loop label VITIS_LOOP_3055_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3055_9: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50751:4: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50758:5: warning: Added loop label VITIS_LOOP_3062_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3062_10: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50758:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50762:5: warning: Added loop label VITIS_LOOP_3066_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3066_11: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50762:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50777:3: warning: Added loop label VITIS_LOOP_3081_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3081_12: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50777:3: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50914:4: warning: Added loop label VITIS_LOOP_3218_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3218_13: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50914:4: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50921:5: warning: Added loop label VITIS_LOOP_3225_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3225_14: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50921:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50925:5: warning: Added loop label VITIS_LOOP_3229_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3229_15: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50925:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50940:3: warning: Added loop label VITIS_LOOP_3244_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3244_16: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:50940:3: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:51100:4: warning: Added loop label VITIS_LOOP_3404_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3404_17: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:51100:4: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:51107:5: warning: Added loop label VITIS_LOOP_3411_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3411_18: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:51107:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:51111:5: warning: Added loop label VITIS_LOOP_3415_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3415_19: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:51111:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:51826:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_703_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:51826:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:52044:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_921_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:52044:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:52461:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1345_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:52461:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:52781:9: warning: Added loop label VITIS_LOOP_240_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_240_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:52781:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:52809:9: warning: Added loop label VITIS_LOOP_268_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_268_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:52809:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53511:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_48_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53511:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53564:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_109_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53564:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53578:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_123_3: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53578:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53608:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_153_4: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53608:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53693:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_281_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53693:12: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53713:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_301_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53713:16: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53727:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_315_3: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53727:20: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53820:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_433_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53820:12: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53834:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_447_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53834:15: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53954:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_33_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:53954:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54078:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_183_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54078:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54133:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_248_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54133:13: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54652:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_16_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54652:2: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54663:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_27_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54663:2: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54674:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_38_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54674:2: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54685:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_49_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54685:2: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54696:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_60_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54696:2: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54707:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_71_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54707:2: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54718:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_82_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54718:2: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54729:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_93_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:54729:2: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:56752:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_26_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:56752:12: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:56816:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_40_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:56816:7: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:56933:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_49_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:56933:9: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:56958:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_81_2: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:56958:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:57028:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_169_3: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:57028:8: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:59307:5: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < iter*FFT_SIZE; i++)
+    ^~~
+    VITIS_LOOP_53_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:59307:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:59332:5: warning: Added loop label VITIS_LOOP_78_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < iter*FFT_SIZE; i++)
+    ^~~
+    VITIS_LOOP_78_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:59332:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:59350:5: warning: Added loop label VITIS_LOOP_96_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < iter; i++)
+    ^~~
+    VITIS_LOOP_96_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:59350:5: note: FIX-IT applied suggested code changes
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:59412:5: warning: Added loop label VITIS_LOOP_158_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < iter; i++)
+    ^~~
+    VITIS_LOOP_158_1: 
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp:59412:5: note: FIX-IT applied suggested code changes

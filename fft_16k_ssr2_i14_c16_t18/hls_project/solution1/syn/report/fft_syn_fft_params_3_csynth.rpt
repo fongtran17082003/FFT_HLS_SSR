@@ -1,0 +1,115 @@
+
+
+================================================================
+== Vitis HLS Report for 'fft_syn_fft_params_3'
+================================================================
+* Date:           Tue Mar  3 21:26:52 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.000 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    24727|    24727|  0.247 ms|  0.247 ms|  24727|  24727|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       -|       -|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |       33|     0|   13222|   10829|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|       -|    -|
+|Register         |        -|     -|       -|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |       33|     0|   13222|   10829|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       11|     0|       5|       9|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-----------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++--------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|  fft_syn<fft_params>.3|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|  fft_syn<fft_params>.3|  return value|
+|ap_ce                     |   in|    1|  ap_ctrl_hs|  fft_syn<fft_params>.3|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|  fft_syn<fft_params>.3|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|  fft_syn<fft_params>.3|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|  fft_syn<fft_params>.3|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|  fft_syn<fft_params>.3|  return value|
+|ap_continue               |   in|    1|  ap_ctrl_hs|  fft_syn<fft_params>.3|  return value|
+|xn_dout                   |   in|   32|     ap_fifo|                     xn|       pointer|
+|xn_empty_n                |   in|    1|     ap_fifo|                     xn|       pointer|
+|xn_read                   |  out|    1|     ap_fifo|                     xn|       pointer|
+|xk_din                    |  out|   32|     ap_fifo|                     xk|       pointer|
+|xk_full_n                 |   in|    1|     ap_fifo|                     xk|       pointer|
+|xk_write                  |  out|    1|     ap_fifo|                     xk|       pointer|
+|status_data_V_din         |  out|    8|     ap_fifo|          status_data_V|       pointer|
+|status_data_V_full_n      |   in|    1|     ap_fifo|          status_data_V|       pointer|
+|status_data_V_write       |  out|    1|     ap_fifo|          status_data_V|       pointer|
+|config_ch_data_V_dout     |   in|   16|     ap_fifo|       config_ch_data_V|       pointer|
+|config_ch_data_V_empty_n  |   in|    1|     ap_fifo|       config_ch_data_V|       pointer|
+|config_ch_data_V_read     |  out|    1|     ap_fifo|       config_ch_data_V|       pointer|
++--------------------------+-----+-----+------------+-----------------------+--------------+
+

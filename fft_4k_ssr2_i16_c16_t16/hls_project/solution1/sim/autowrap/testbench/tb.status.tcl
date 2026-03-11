@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/phongtran/Downloads/ssr-fft-main/fft_4k_ssr2_i16_c16_t16/hls_project/solution1/./sim/autowrap/testbench/fft_4k_ssr2_i16_c16_t16.cpp_pre.cpp.tb.cpp

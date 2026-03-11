@@ -1,0 +1,880 @@
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:10:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:97:77: warning: unused parameter 'data_type' [-Wunused-parameter]
+      inline __attribute__((always_inline)) void checkBitWidth(ip_fft::type data_type = ip_fft::fixed_point)
+                                                                            ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:121:66: warning: unused parameter 'cp_len_enable' [-Wunused-parameter]
+      inline __attribute__((always_inline)) void checkCpLen(bool cp_len_enable)
+                                                                 ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:134:68: warning: unused parameter 'scaling_opt' [-Wunused-parameter]
+      inline __attribute__((always_inline)) void checkSch(unsigned scaling_opt)
+                                                                   ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:311:71: warning: unused parameter 'scaling_opt' [-Wunused-parameter]
+      inline __attribute__((always_inline)) void checkBlkExp(unsigned scaling_opt)
+                                                                      ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:324:66: warning: unused parameter 'has_ovflo' [-Wunused-parameter]
+      inline __attribute__((always_inline)) void checkOvflo(bool has_ovflo)
+                                                                 ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:409:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_core_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:410:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_core_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:411:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:450:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:795:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:10:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h:866:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:54:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:93:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:439:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:515:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:517:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:518:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:520:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:521:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:580:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:582:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:583:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:585:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:586:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:703:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=disable_start_propagation_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS dataflow disable_start_propagation
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:704:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_ctrl_none port=return
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:735:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:737:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:738:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:761:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:763:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:764:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:767:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=dim=1 variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_reshape dim=1 variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:768:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=dim=1 variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_reshape dim=1 variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:827:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:829:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:830:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:832:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:833:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:883:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:885:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:886:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS aggregate variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:888:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:889:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_syn_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:958:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=disable_start_propagation_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS dataflow disable_start_propagation
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:959:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_ctrl_none port=return
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:986:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:988:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:989:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1012:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1014:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1015:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1041:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1043:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1044:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1047:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=dim=1 variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_reshape dim=1 variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1048:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=dim=1 variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_reshape dim=1 variable=xk
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1073:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1075:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xn_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xn
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:1076:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_XLX_SEP_ PragmaOptions=variable=xk_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS stream variable=xk
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1040:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:19:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:224:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:225:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=latency_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=min=1 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LATENCY min=1 max=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:226:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1040:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:90:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=swap_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=swap_table complete
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:91:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:92:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:93:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:94:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:95:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:125:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:126:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:127:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:128:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:129:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:130:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:131:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:132:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:133:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:134:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:183:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=swap_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=swap_table complete
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:184:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:185:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:186:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:213:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:214:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:215:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:216:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:217:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:218:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sincos_approximation_XLX_SEP_ PragmaOptions=variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:254:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:255:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sin_or_cos_approximation_XLX_SEP_ PragmaOptions=variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:284:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinf_or_cosf_XLX_SEP_ PragmaOptions=variable=swap_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=swap_table complete
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:285:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinf_or_cosf_XLX_SEP_ PragmaOptions=variable=neg_sin_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=neg_sin_table complete
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:286:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinf_or_cosf_XLX_SEP_ PragmaOptions=variable=neg_cos_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=neg_cos_table complete
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:356:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinf_or_cosf_XLX_SEP_ PragmaOptions=variable=swap_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=swap_table complete
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:357:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinf_or_cosf_XLX_SEP_ PragmaOptions=variable=neg_sin_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=neg_sin_table complete
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:358:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinf_or_cosf_XLX_SEP_ PragmaOptions=variable=neg_cos_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=neg_cos_table complete
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:427:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinf_or_cosf_XLX_SEP_ PragmaOptions=variable=neg_sin_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=neg_sin_table complete
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hotbm_apfixed.h:428:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinf_or_cosf_XLX_SEP_ PragmaOptions=variable=neg_cos_table complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=neg_cos_table complete
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1040:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:62:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cordic_circ_apfixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:120:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=doublecordic_apfixed_XLX_SEP_ PragmaOptions=II=5_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=5
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:123:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=doublecordic_apfixed_XLX_SEP_ PragmaOptions=II=3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=3
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:126:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=doublecordic_apfixed_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:129:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=doublecordic_apfixed_XLX_SEP_ PragmaOptions=II=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=4
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:290:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_tan_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:450:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_tanpi_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:630:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_atan2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:634:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_atan2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:841:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinh_cosh_range_redux_cordic_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:860:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sinh_cosh_range_redux_cordic_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1041:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:69:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:75:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:79:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:146:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:152:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:156:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:171:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:179:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:244:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:250:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:254:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:269:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:277:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:506:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:512:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:516:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:526:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:530:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:540:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:548:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:909:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:915:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:919:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:933:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1035:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1041:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1045:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1132:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1138:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1142:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1161:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1168:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1284:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1290:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1294:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1314:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1321:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1583:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1589:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1593:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1617:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:1624:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2054:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2060:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2064:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2194:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2201:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2205:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2252:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2259:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2263:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2281:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2336:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2343:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2347:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2365:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2454:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2461:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2465:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2475:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2479:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2490:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2498:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2823:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2830:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2834:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2922:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2929:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2933:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2948:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2980:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2987:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:2991:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3006:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3056:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3063:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3067:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3082:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3219:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3226:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3230:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3245:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3405:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3412:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h:3416:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=exp10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1042:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_log_apfixed.h:475:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_log_apfixed.h:704:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_log_apfixed.h:792:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_log_apfixed.h:922:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log10_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_log_apfixed.h:1068:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_log_apfixed.h:1346:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=log2_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1043:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sqrt_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h:241:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sqrt_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h:269:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sqrt_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h:367:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rsqrt_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h:414:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=recip_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1044:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_round_copysign_apfixed.h:14:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ceil_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_round_copysign_apfixed.h:31:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ceil_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_round_copysign_apfixed.h:91:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=trunc_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_round_copysign_apfixed.h:177:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=round_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_round_copysign_apfixed.h:213:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rint_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1045:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h:49:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pow_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h:110:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pow_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h:124:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pow_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h:154:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pow_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h:282:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pown_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h:302:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pown_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h:316:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pown_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h:434:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rootn_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h:448:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rootn_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1046:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_diff_apfixed.h:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fdim_fixed_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_diff_apfixed.h:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fdim_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_diff_apfixed.h:163:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=maxmag_fixed_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_diff_apfixed.h:184:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=maxmag_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_diff_apfixed.h:229:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=minmag_fixed_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_diff_apfixed.h:249:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=minmag_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1048:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_frexp_apfixed.h:46:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=frexp_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1050:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:25:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isnotequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:41:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isnotequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:49:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:57:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isnotequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:65:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:73:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isnotequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:82:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:90:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isnotequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:98:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:106:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isnotequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:114:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:122:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isnotequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:130:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_isequal_isnotequal_apfixed.h:138:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_isnotequal_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1051:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_all_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_all_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:37:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_all_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:48:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_all_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:59:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_any_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:70:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_any_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:81:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_any_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h:92:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_any_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1052:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_select_bitselect_apfixed.h:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_bitselect_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_select_bitselect_apfixed.h:47:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_bitselect_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_select_bitselect_apfixed.h:55:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_bitselect_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_select_bitselect_apfixed.h:62:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_bitselect_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1053:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_erf_apfixed.h:490:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=erfc_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1055:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_lgamma_apfixed.h:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=lgamma_generic_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1056:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_tgamma_apfixed.h:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=tgamma_generic_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1058:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_mad_apfixed.h:27:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=generic_mad_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+In file included from fft_16_ssr1_i16_c16_t16.cpp:38:
+In file included from ./fft_16_ssr1_i16_c16_t16.hpp:11:
+In file included from /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1060:
+/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hypot_apfixed.h:170:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hypot_fixed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:55:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dma_in_XLX_SEP_ PragmaOptions=max=FFT_ITER*FFT_SIZE_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT max=FFT_ITER*FFT_SIZE
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:80:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dma_out_XLX_SEP_ PragmaOptions=max=FFT_ITER*FFT_SIZE_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT max=FFT_ITER*FFT_SIZE
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:98:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=radix4s_XLX_SEP_ PragmaOptions=max=FFT_ITER_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT max=FFT_ITER
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:99:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=radix4s_XLX_SEP_ PragmaOptions=II=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=4
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:160:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_serial_kernel_XLX_SEP_ PragmaOptions=max=FFT_ITER_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT max=FFT_ITER
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:161:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_serial_kernel_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:173:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/csynth.tcl:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=fft_16_ssr1_i16_c16_t16_top_XLX_SEP_ PragmaOptions=name=fft_16_ssr1_i16_c16_t16_top_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=fft_16_ssr1_i16_c16_t16_top
+        ^
+/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/directives.tcl:7:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=fft_16_ssr1_i16_c16_t16_top_XLX_SEP_ PragmaOptions=name=fft_16_ssr1_i16_c16_t16_top_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=fft_16_ssr1_i16_c16_t16_top
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:200:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_16_ssr1_i16_c16_t16_top_XLX_SEP_ PragmaOptions=mode=s_axilite port=iter_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=iter
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:201:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_16_ssr1_i16_c16_t16_top_XLX_SEP_ PragmaOptions=mode=s_axilite port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=return
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:202:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_16_ssr1_i16_c16_t16_top_XLX_SEP_ PragmaOptions=mode=m_axi bundle=gmem2 depth=sim_depth max_widen_bitwidth=512 port=dout_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=m_axi bundle=gmem2 depth=sim_depth max_widen_bitwidth=512 port=dout
+        ^
+fft_16_ssr1_i16_c16_t16.cpp:203:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fft_16_ssr1_i16_c16_t16_top_XLX_SEP_ PragmaOptions=mode=m_axi bundle=gmem1 depth=sim_depth max_widen_bitwidth=512 port=din_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=m_axi bundle=gmem1 depth=sim_depth max_widen_bitwidth=512 port=din
+        ^
+273 warnings generated.

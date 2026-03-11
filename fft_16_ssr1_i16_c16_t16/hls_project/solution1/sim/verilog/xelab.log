@@ -1,0 +1,495 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/phongtran/Downloads/VIVADO/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_fft_16_ssr1_i16_c16_t16_top_top glbl -Oenable_linking_all_libraries -prj fft_16_ssr1_i16_c16_t16_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s fft_16_ssr1_i16_c16_t16_top -debug all 
+Multi-threading is on. Using 10 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_dma_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_dma_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_dataflow_in_loop_VITIS_LOOP_158_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_dataflow_in_loop_VITIS_LOOP_158_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_dma_out_Pipeline_VITIS_LOOP_78_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_dma_out_Pipeline_VITIS_LOOP_78_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_start_for_Block_newFuncRoot_proc_proc6_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_start_for_Block_newFuncRoot_proc_proc6_U0
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_start_for_Block_newFuncRoot_proc_proc6_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_load
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_store
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_read
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_write
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_srl
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem1_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w8_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w8_d2_S
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w8_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fft_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fft_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w28_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w28_d2_S
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w28_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/AESL_axi_master_gmem2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_dma_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_dma_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_Block_newFuncRoot_proc_proc6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_Block_newFuncRoot_proc_proc6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w64_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w64_d4_S
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w64_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_start_for_fft_serial_kernel_wrapper_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_start_for_fft_serial_kernel_wrapper_U0
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_start_for_fft_serial_kernel_wrapper_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/AESL_axi_master_gmem1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fft_serial_kernel_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fft_serial_kernel_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fft_syn_fft_params_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fft_syn_fft_params_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_Block_newFuncRoot_proc_proc5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_Block_newFuncRoot_proc_proc5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fft_fft_params_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fft_fft_params_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fft_serial_kernel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fft_serial_kernel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_start_for_dma_out_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_start_for_dma_out_U0
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_start_for_dma_out_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_dma_in_Pipeline_VITIS_LOOP_53_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_dma_in_Pipeline_VITIS_LOOP_53_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_Block_newFuncRoot_proc_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_Block_newFuncRoot_proc_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w32_d2_S_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w32_d2_S_x
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w32_d2_S_x_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_entry_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_entry_proc42.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_entry_proc42
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fft_16_ssr1_i16_c16_t16_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_load
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_store
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_read
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_write
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_srl
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_gmem2_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w32_d2_S
+INFO: [VRFC 10-311] analyzing module fft_16_ssr1_i16_c16_t16_top_fifo_w32_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/ip/xil_defaultlib/fft_16_ssr1_i16_c16_t16_top_fft_syn_fft_params_s_core_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fft_16_ssr1_i16_c16_t16_top_fft_syn_fft_params_s_core_ip'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9145] library name 'xfft_v9_1_10' of instantiated unit conflicts with the name of another visible identifier [/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/ip/xil_defaultlib/fft_16_ssr1_i16_c16_t16_top_fft_syn_fft_params_s_core_ip.vhd:199]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w8_d2_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_start_for_Block_newFuncRoot_proc_proc6_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w32_d2_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w64_d4_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w32_d2_S_x.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_fifo_w28_d2_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_start_for_dma_out_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/sim/verilog/fft_16_ssr1_i16_c16_t16_top_start_for_fft_serial_kernel_wrapper_U0.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_11.xbip_utils_v3_0_11_pkg
+Compiling package xfft_v9_1_10.xfft_v9_1_10_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_7.axi_utils_v2_0_7_pkg
+Compiling package mult_gen_v12_0_19.mult_gen_v12_0_19_pkg
+Compiling package ieee.std_logic_signed
+Compiling package cmpy_v6_0_22.cmpy_v6_0_22_pkg
+Compiling package floating_point_v7_0_21.floating_point_v7_0_21_consts
+Compiling package floating_point_v7_0_21.floating_point_v7_0_21_exp_table...
+Compiling package floating_point_v7_0_21.floating_point_v7_0_21_pkg
+Compiling package xfft_v9_1_10.pkg
+Compiling package xfft_v9_1_10.xfft_v9_1_10_axi_pkg
+Compiling package axi_utils_v2_0_7.global_util_pkg
+Compiling package axi_utils_v2_0_7.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv_comp
+Compiling package xbip_addsub_v3_0_7.xbip_addsub_v3_0_7_viv_comp
+Compiling package c_addsub_v12_0_16.c_addsub_v12_0_16_pkg
+Compiling package c_addsub_v12_0_16.c_addsub_v12_0_16_pkg_legacy
+Compiling package c_reg_fd_v12_0_7.c_reg_fd_v12_0_7_viv_comp
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_pkg
+Compiling package c_mux_bit_v12_0_7.c_mux_bit_v12_0_7_viv_comp
+Compiling package xfft_v9_1_10.quarter_sin_tw_table
+Compiling package xfft_v9_1_10.quarter2_sin_tw_table
+Compiling package mult_gen_v12_0_19.dsp_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_entr...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_flow...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_dma_...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_dma_...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_entr...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_Bloc...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_Bloc...
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_srl_fifo [\glb_srl_fifo(width=1,has_uvprot...]
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_ifx_master [\glb_ifx_master(width=1,afull_th...]
+Compiling architecture synth of entity xfft_v9_1_10.axi_wrapper_output_fifo [\axi_wrapper_output_fifo(c_fifo_...]
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_srl_fifo [\glb_srl_fifo(width=5,has_uvprot...]
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_ifx_slave [\glb_ifx_slave(width=5,has_uvpro...]
+Compiling architecture synth of entity xfft_v9_1_10.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_srl_fifo [\glb_srl_fifo(width=33,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_ifx_slave [\glb_ifx_slave(width=33,has_uvpr...]
+Compiling architecture synth of entity xfft_v9_1_10.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_srl_fifo [\glb_srl_fifo(width=34,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_ifx_master [\glb_ifx_master(width=34,afull_t...]
+Compiling architecture synth of entity xfft_v9_1_10.axi_wrapper_output_fifo [\axi_wrapper_output_fifo(c_fifo_...]
+Compiling architecture synth of entity xfft_v9_1_10.axi_wrapper [\axi_wrapper(c_nfft_max=4,c_arch...]
+Compiling architecture xilinx of entity xfft_v9_1_10.cnt_tc_rtl_b [\cnt_tc_rtl_b(c_xdevicefamily="z...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.equ_rtl [\equ_rtl(c_xdevicefamily="zynqup...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_cnt_ctrl [\r22_cnt_ctrl(c_xdevicefamily="z...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_cnt_ctrl [\r22_cnt_ctrl(c_xdevicefamily="z...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture fd_v of entity unisim.FD [fd_default]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture structural of entity c_reg_fd_v12_0_7.c_reg_fd_v12_0_7_viv [\c_reg_fd_v12_0_7_viv(c_width=17...]
+Compiling architecture rtl of entity c_addsub_v12_0_16.c_addsub_v12_0_16_lut6_legacy [\c_addsub_v12_0_16_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_fabric_legacy [\c_addsub_v12_0_16_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_legacy [\c_addsub_v12_0_16_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_viv [\c_addsub_v12_0_16_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_10.adder [\adder(c_xdevicefamily="zynquplu...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11001010")(0,7)\]
+Compiling architecture xilinx of entity xfft_v9_1_10.mux_bus2 [\mux_bus2(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.mux_bus2 [\mux_bus2(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_bf_sp [\r22_bf_sp(c_xdevicefamily="zynq...]
+Compiling architecture synth of entity xfft_v9_1_10.r22_twos_comp_mux [\r22_twos_comp_mux(c_xdevicefami...]
+Compiling architecture synth of entity xfft_v9_1_10.r22_twos_comp_mux [\r22_twos_comp_mux(c_xdevicefami...]
+Compiling architecture structural of entity c_reg_fd_v12_0_7.c_reg_fd_v12_0_7_viv [\c_reg_fd_v12_0_7_viv(c_width=18...]
+Compiling architecture rtl of entity c_addsub_v12_0_16.c_addsub_v12_0_16_lut6_legacy [\c_addsub_v12_0_16_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_fabric_legacy [\c_addsub_v12_0_16_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_legacy [\c_addsub_v12_0_16_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_viv [\c_addsub_v12_0_16_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_10.adder [\adder(c_xdevicefamily="zynquplu...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.mux_bus2 [\mux_bus2(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_bf_sp [\r22_bf_sp(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture structural of entity c_reg_fd_v12_0_7.c_reg_fd_v12_0_7_viv [\c_reg_fd_v12_0_7_viv(c_width=4,...]
+Compiling architecture rtl of entity c_addsub_v12_0_16.c_addsub_v12_0_16_lut6_legacy [\c_addsub_v12_0_16_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_fabric_legacy [\c_addsub_v12_0_16_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_legacy [\c_addsub_v12_0_16_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_viv [\c_addsub_v12_0_16_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_10.adder [\adder(c_xdevicefamily="zynquplu...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture xilinx of entity xfft_v9_1_10.mux_bus4 [\mux_bus4(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.twgen_distmem [\twgen_distmem(theta_width=3,pip...]
+Compiling architecture xilinx of entity xfft_v9_1_10.twiddle_gen [\twiddle_gen(c_xdevicefamily="zy...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_tw_gen [\r22_tw_gen(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.op_resize [\op_resize(ai_width=18,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.dsp [\dsp(c_xdevicefamily="zynquplus"...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(alumodereg=0,amultsel="...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.op_resize [\op_resize(ai_width=19,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.dsp [\dsp(c_xdevicefamily="zynquplus"...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_19.dsp [\dsp(c_xdevicefamily="zynquplus"...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.input_negation [\input_negation(c_xdevicefamily=...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.cmpy_3_dsp48 [\cmpy_3_dsp48(c_xdevicefamily="z...]
+Compiling architecture xilinx of entity cmpy_v6_0_22.cmpy_v6_0_22_synth [\cmpy_v6_0_22_synth(c_xdevicefam...]
+Compiling architecture xilinx of entity xfft_v9_1_10.cmpy [\cmpy(c_xdevicefamily="zynquplus...]
+Compiling architecture xilinx of entity xfft_v9_1_10.mux_bus4 [\mux_bus4(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity xfft_v9_1_10.arith_shift3 [\arith_shift3(c_xdevicefamily="z...]
+Compiling architecture rtl of entity c_addsub_v12_0_16.c_addsub_v12_0_16_lut6_legacy [\c_addsub_v12_0_16_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_fabric_legacy [\c_addsub_v12_0_16_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_legacy [\c_addsub_v12_0_16_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_viv [\c_addsub_v12_0_16_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_10.equ_rtl [\equ_rtl(c_xdevicefamily="zynqup...]
+Compiling architecture xilinx of entity xfft_v9_1_10.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_ovflo [\r22_ovflo(registered=0)\]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_pe [\r22_pe(c_xdevicefamily="zynqupl...]
+Compiling architecture synth of entity xfft_v9_1_10.srl_fifo [\srl_fifo(c_width=1)\]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_bf_sp [\r22_bf_sp(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_bf_sp [\r22_bf_sp(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.mux_bus4 [\mux_bus4(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity xfft_v9_1_10.arith_shift3 [\arith_shift3(c_xdevicefamily="z...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_pe [\r22_pe(c_xdevicefamily="zynqupl...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,dob_reg=1,ra...]
+Compiling architecture xilinx of entity xfft_v9_1_10.dpm [\dpm(c_xdevicefamily="zynquplus"...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_memory [\r22_memory(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_busy [\r22_busy(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_16.c_addsub_v12_0_16_lut6_legacy [\c_addsub_v12_0_16_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_fabric_legacy [\c_addsub_v12_0_16_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_legacy [\c_addsub_v12_0_16_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_viv [\c_addsub_v12_0_16_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_10.logic_gate [\logic_gate(c_xdevicefamily="zyn...]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture xilinx of entity xfft_v9_1_10.cnt_sat [\cnt_sat(c_xdevicefamily="zynqup...]
+Compiling architecture rtl of entity c_addsub_v12_0_16.c_addsub_v12_0_16_lut6_legacy [\c_addsub_v12_0_16_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_fabric_legacy [\c_addsub_v12_0_16_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_legacy [\c_addsub_v12_0_16_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_viv [\c_addsub_v12_0_16_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_10.logic_gate [\logic_gate(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_10.cnt_sat [\cnt_sat(c_xdevicefamily="zynqup...]
+Compiling architecture rtl of entity c_addsub_v12_0_16.c_addsub_v12_0_16_lut6_legacy [\c_addsub_v12_0_16_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_fabric_legacy [\c_addsub_v12_0_16_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_legacy [\c_addsub_v12_0_16_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_viv [\c_addsub_v12_0_16_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_10.logic_gate [\logic_gate(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_10.cnt_sat [\cnt_sat(c_xdevicefamily="zynqup...]
+Compiling architecture rtl of entity c_addsub_v12_0_16.c_addsub_v12_0_16_lut6_legacy [\c_addsub_v12_0_16_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_fabric_legacy [\c_addsub_v12_0_16_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_legacy [\c_addsub_v12_0_16_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_viv [\c_addsub_v12_0_16_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_10.logic_gate [\logic_gate(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_10.cnt_sat [\cnt_sat(c_xdevicefamily="zynqup...]
+Compiling architecture structural of entity c_reg_fd_v12_0_7.c_reg_fd_v12_0_7_viv [\c_reg_fd_v12_0_7_viv(c_width=4,...]
+Compiling architecture rtl of entity c_addsub_v12_0_16.c_addsub_v12_0_16_lut6_legacy [\c_addsub_v12_0_16_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_fabric_legacy [\c_addsub_v12_0_16_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_legacy [\c_addsub_v12_0_16_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_16.c_addsub_v12_0_16_viv [\c_addsub_v12_0_16_viv(c_xdevice...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture xilinx of entity xfft_v9_1_10.equ_rtl [\equ_rtl(c_xdevicefamily="zynqup...]
+Compiling architecture xilinx of entity xfft_v9_1_10.cnt_tc_rtl_a [\cnt_tc_rtl_a(c_xdevicefamily="z...]
+Compiling architecture struct of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_legacy [\c_shift_ram_v12_0_15_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_15.c_shift_ram_v12_0_15_viv [\c_shift_ram_v12_0_15_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_flow_ctrl [\r22_flow_ctrl(c_xdevicefamily="...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101110")(0,7)\]
+Compiling architecture xilinx of entity xfft_v9_1_10.r22_cnt_ctrl [\r22_cnt_ctrl(c_xdevicefamily="z...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_10.xfft_v9_1_10_d [\xfft_v9_1_10_d(c_xdevicefamily=...]
+Compiling architecture synth of entity xfft_v9_1_10.xfft_v9_1_10_core [\xfft_v9_1_10_core(c_xdevicefami...]
+Compiling architecture synth of entity xfft_v9_1_10.xfft_v9_1_10_viv [\xfft_v9_1_10_viv(c_xdevicefamil...]
+Compiling architecture xilinx of entity xfft_v9_1_10.xfft_v9_1_10 [\xfft_v9_1_10(c_xdevicefamily="z...]
+Compiling architecture fft_16_ssr1_i16_c16_t16_top_fft_syn_fft_params_s_core_ip_arch of entity xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fft_syn_fft_params_s_core_ip [fft_16_ssr1_i16_c16_t16_top_fft_...]
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fft_...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fft_...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_Bloc...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_star...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_star...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_data...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fft_...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fft_...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_dma_...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_dma_...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fifo...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_star...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_star...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_star...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_star...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_fft_...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_cont...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top_gmem...
+Compiling module xil_defaultlib.fft_16_ssr1_i16_c16_t16_top
+Compiling module xil_defaultlib.AESL_axi_master_gmem1
+Compiling module xil_defaultlib.AESL_axi_master_gmem2
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.df_fifo_intf
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.df_loop_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_fft_16_ssr1_i16_c16_t16_to...
+Compiling module work.glbl
+Built simulation snapshot fft_16_ssr1_i16_c16_t16_top

@@ -1,0 +1,67 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 937, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 183, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 139, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 139, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 122, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 103, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 103, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 104, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 124, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 153, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 155, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 154, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 154, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 154, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 164, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 186, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="fft_16_ssr1_i16_c16_t16_top" col1="fft_16_ssr1_i16_c16_t16.cpp:195" col2="937" col3="122" col4="153" col5="154" col6="186">
+                    <row id="2" col0="fft_core" col1="fft_16_ssr1_i16_c16_t16.cpp:168" col2="931" col3="114" col4="143" col5="144" col6="171">
+                        <row id="12" col0="dma_in" col1="fft_16_ssr1_i16_c16_t16.cpp:47" col2="206" col3="20" col4="44" col5="45" col6="43"/>
+                        <row id="1" col0="fft_serial_kernel" col1="fft_16_ssr1_i16_c16_t16.cpp:147" col2="445" col3="51" col4="41" col5="40" col6="66">
+                            <row id="4" col0="config_t" col1="hls_fft.h:91" col2="2" col3="" col4="" col5="" col6=""/>
+                            <row id="11" col0="setDir" col1="hls_fft.h:211" col2="58" col3="" col4="" col5="" col6=""/>
+                            <row id="10" col0="setSch" col1="hls_fft.h:239" col2="73" col3="" col4="" col5="" col6="">
+                                <row id="8" col0="checkSch" col1="hls_fft.h:134" col2="1" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="9" col0="fft&lt;fft_16_ssr1_i16_c16_t16::fft_params&gt;" col1="hls_fft_x_complex.h:696" col2="256" col3="31" col4="27" col5="26" col6="">
+                                <row id="3" col0="fft_syn&lt;fft_16_ssr1_i16_c16_t16::fft_params&gt;" col1="hls_fft_x_complex.h:509" col2="251" col3="26" col4="24" col5="23" col6="">
+                                    <row id="7" col0="getSch" col1="hls_fft.h:254" col2="63" col3="" col4="" col5="" col6="">
+                                        <row id="8" col0="checkSch" col1="hls_fft.h:134" col2="1" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="6" col0="getDir" col1="hls_fft.h:220" col2="96" col2_disp=" 96 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="5" col0="dma_out" col1="fft_16_ssr1_i16_c16_t16.cpp:72" col2="252" col3="21" col4="48" col5="49" col6="48"/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

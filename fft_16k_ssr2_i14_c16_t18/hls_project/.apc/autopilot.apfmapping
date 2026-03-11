@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fft_16k_ssr2_i14_c16_t18.cpp" path="/home/phongtran/Downloads/ssr-fft-main/fft_16k_ssr2_i14_c16_t18/fft_16k_ssr2_i14_c16_t18.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="/home/phongtran/Downloads/ssr-fft-main/fft_16k_ssr2_i14_c16_t18/testbench.cpp"/>
+    <originFiles name="fft_model.cpp" path="/home/phongtran/Downloads/ssr-fft-main/fft_16k_ssr2_i14_c16_t18/fft_model.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

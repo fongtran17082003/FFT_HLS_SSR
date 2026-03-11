@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../testbench.cpp in debug mode
+   Compiling ../../../../fft_model.cpp in debug mode
+   Compiling ../../../../fft_16k_ssr2_i14_c16_t18.cpp in debug mode
+   Generating csim.exe
+Generating test data
+Generating truth data
+Loading the HLS input buffer
+Running the HLS component
+Checking results
+The mean square error is 6.37165e-10
+The maximum absolute error is 6.82394e-05
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 262144
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

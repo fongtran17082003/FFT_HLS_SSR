@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "fft_4k_ssr2_i16_c16_t16_top",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fft_4k_ssr2_i16_c16_t16_top"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/phongtran/Downloads/ssr-fft-main/fft_4k_ssr2_i16_c16_t16/hls_project/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "fft_4k_ssr2_i16_c16_t16_top",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fft_4k_ssr2_i16_c16_t16_top"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/phongtran/Downloads/ssr-fft-main/fft_4k_ssr2_i16_c16_t16/hls_project/solution1/csynth.tcl",
+    "sourceLine": 20,
+    "success": true
+  }
+]

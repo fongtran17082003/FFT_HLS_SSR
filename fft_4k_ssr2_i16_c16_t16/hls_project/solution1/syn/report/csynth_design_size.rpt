@@ -1,0 +1,68 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 5,111        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 1,017        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |   613        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |   604        | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   466        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |   674        | user array partition pragmas are applied                                               |
+|               | (2) simplification          |   495        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |   675        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |   894        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |   914        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |   814        | loop and instruction simplification                                                    |
+|               | (2) parallelization         |   808        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |   824        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |   824        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |   804        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |   852        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++---------------------------------------+---------------------------------+----------------+---------------+---------------+---------------+---------------+
+| Function                              | Location                        | Compile/Link   | Unroll/Inline | Array/Struct  | Performance   | HW Transforms |
++---------------------------------------+---------------------------------+----------------+---------------+---------------+---------------+---------------+
+| + fft_4k_ssr2_i16_c16_t16_top         | fft_4k_ssr2_i16_c16_t16.cpp:359 | 5,111          | 466           | 914           | 824           | 852           |
+|  + fft_core                           | fft_4k_ssr2_i16_c16_t16.cpp:320 | 5,105          | 458           | 904           | 814           | 837           |
+|     dma_in                            | fft_4k_ssr2_i16_c16_t16.cpp:57  |  385           |  24           |  57           |  57           |  56           |
+|     reorder                           | fft_4k_ssr2_i16_c16_t16.cpp:105 |  512           |  93           | 356           | 275           | 272           |
+|     radix2p                           | fft_4k_ssr2_i16_c16_t16.cpp:166 | 1,526          |  58           | 119           | 118           | 113           |
+|   + twiddle                           | fft_4k_ssr2_i16_c16_t16.cpp:255 | 1,159          |  65           | 117           | 112           |  99           |
+|      get_phase_factor                 | fft_4k_ssr2_i16_c16_t16.hpp:325 |    8           |  10           |  14           |  10           |  10           |
+|      cmul                             | fft_4k_ssr2_i16_c16_t16.cpp:46  |  941           |               |               |               |               |
+|   + fft_serial_kernel                 | fft_4k_ssr2_i16_c16_t16.cpp:299 |  890 (2 calls) | 102 (2 calls) |  82 (2 calls) |  80 (2 calls) | 132 (2 calls) |
+|      config_t                         | hls_fft.h:91                    |    4 (2 calls) |               |               |               |               |
+|      setDir                           | hls_fft.h:211                   |  116 (2 calls) |               |               |               |               |
+|    + setSch                           | hls_fft.h:239                   |  146 (2 calls) |               |               |               |               |
+|       checkSch                        | hls_fft.h:134                   |    2 (2 calls) |               |               |               |               |
+|    + fft<fft_4k_ssr2_i16_c16_t16:...  | hls_fft_x_complex.h:696         |  512 (2 calls) |  62 (2 calls) |  54 (2 calls) |  52 (2 calls) |               |
+|     + fft_syn<fft_4k_ssr2_i16_c16_... | hls_fft_x_complex.h:509         |  502 (2 calls) |  52 (2 calls) |  48 (2 calls) |  46 (2 calls) |               |
+|      + getSch                         | hls_fft.h:254                   |  126 (2 calls) |               |               |               |               |
+|         checkSch                      | hls_fft.h:134                   |    2 (2 calls) |               |               |               |               |
+|        getDir                         | hls_fft.h:220                   |  192 (4 calls) |               |               |               |               |
+|     joiner                            | fft_4k_ssr2_i16_c16_t16.cpp:280 |   61           |  28           |  87           |  86           |  71           |
+|     dma_out                           | fft_4k_ssr2_i16_c16_t16.cpp:86  |  477           |  25           |  57           |  57           |  55           |
++---------------------------------------+---------------------------------+----------------+---------------+---------------+---------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

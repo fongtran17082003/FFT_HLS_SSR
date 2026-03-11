@@ -1,0 +1,781 @@
+
+
+================================================================
+== Vitis HLS Report for 'dma_in'
+================================================================
+* Date:           Mon Mar  9 10:31:57 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  0.20 us|  0.146 us|    54.00 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
+    |   min   |   max   |    min    |    max   | min |  max |   Type  |
+    +---------+---------+-----------+----------+-----+------+---------+
+    |       75|     4172|  15.000 us|  0.834 ms|   75|  4172|       no|
+    +---------+---------+-----------+----------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 74
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 61 
+61 --> 62 
+62 --> 63 
+63 --> 64 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 69 
+69 --> 70 
+70 --> 71 
+71 --> 72 
+72 --> 73 
+73 --> 74 
+74 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.83>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%iter_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %iter" [fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 75 'read' 'iter_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (1.83ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.i32P0A, i32 %iter_c25, i32 %iter_read" [fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 76 'write' 'write_ln57' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%iter_6 = trunc i32 %iter_read" [fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 77 'trunc' 'iter_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%trunc_ln61 = trunc i32 %iter_read" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 78 'trunc' 'trunc_ln61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%trunc_ln = bitconcatenate i30 @_ssdm_op_BitConcatenate.i30.i19.i11, i19 %trunc_ln61, i11 0" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 79 'bitconcatenate' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.89ns)   --->   "%icmp_ln61 = icmp_sgt  i20 %iter_6, i20 0" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 80 'icmp' 'icmp_ln61' <Predicate = true> <Delay = 0.89> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 81 [1/1] (0.38ns)   --->   "%empty = select i1 %icmp_ln61, i30 %trunc_ln, i30 0" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 81 'select' 'empty' <Predicate = true> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 146.>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%din_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %din" [fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 82 'read' 'din_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%trunc_ln61_1 = partselect i61 @_ssdm_op_PartSelect.i61.i64.i32.i32, i64 %din_read, i32 3, i32 63" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 83 'partselect' 'trunc_ln61_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%sext_ln61 = sext i61 %trunc_ln61_1" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 84 'sext' 'sext_ln61' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%gmem1_addr = getelementptr i64 %gmem1, i64 %sext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 85 'getelementptr' 'gmem1_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%zext_ln61 = zext i30 %empty" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 86 'zext' 'zext_ln61' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 87 [71/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 87 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 146.>
+ST_3 : Operation 88 [70/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 88 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 146.>
+ST_4 : Operation 89 [69/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 89 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 146.>
+ST_5 : Operation 90 [68/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 90 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 146.>
+ST_6 : Operation 91 [67/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 91 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 146.>
+ST_7 : Operation 92 [66/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 92 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 146.>
+ST_8 : Operation 93 [65/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 93 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 146.>
+ST_9 : Operation 94 [64/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 94 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 146.>
+ST_10 : Operation 95 [63/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 95 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 146.>
+ST_11 : Operation 96 [62/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 96 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 146.>
+ST_12 : Operation 97 [61/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 97 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 12> <Delay = 146.>
+ST_13 : Operation 98 [60/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 98 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 13> <Delay = 146.>
+ST_14 : Operation 99 [59/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 99 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 14> <Delay = 146.>
+ST_15 : Operation 100 [58/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 100 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 15> <Delay = 146.>
+ST_16 : Operation 101 [57/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 101 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 146.>
+ST_17 : Operation 102 [56/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 102 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 18 <SV = 17> <Delay = 146.>
+ST_18 : Operation 103 [55/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 103 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 19 <SV = 18> <Delay = 146.>
+ST_19 : Operation 104 [54/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 104 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 20 <SV = 19> <Delay = 146.>
+ST_20 : Operation 105 [53/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 105 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 21 <SV = 20> <Delay = 146.>
+ST_21 : Operation 106 [52/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 106 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 22 <SV = 21> <Delay = 146.>
+ST_22 : Operation 107 [51/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 107 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 23 <SV = 22> <Delay = 146.>
+ST_23 : Operation 108 [50/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 108 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 24 <SV = 23> <Delay = 146.>
+ST_24 : Operation 109 [49/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 109 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 25 <SV = 24> <Delay = 146.>
+ST_25 : Operation 110 [48/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 110 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 26 <SV = 25> <Delay = 146.>
+ST_26 : Operation 111 [47/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 111 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 27 <SV = 26> <Delay = 146.>
+ST_27 : Operation 112 [46/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 112 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 28 <SV = 27> <Delay = 146.>
+ST_28 : Operation 113 [45/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 113 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 29 <SV = 28> <Delay = 146.>
+ST_29 : Operation 114 [44/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 114 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 30 <SV = 29> <Delay = 146.>
+ST_30 : Operation 115 [43/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 115 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 31 <SV = 30> <Delay = 146.>
+ST_31 : Operation 116 [42/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 116 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 32 <SV = 31> <Delay = 146.>
+ST_32 : Operation 117 [41/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 117 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 33 <SV = 32> <Delay = 146.>
+ST_33 : Operation 118 [40/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 118 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 34 <SV = 33> <Delay = 146.>
+ST_34 : Operation 119 [39/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 119 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 35 <SV = 34> <Delay = 146.>
+ST_35 : Operation 120 [38/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 120 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 36 <SV = 35> <Delay = 146.>
+ST_36 : Operation 121 [37/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 121 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 37 <SV = 36> <Delay = 146.>
+ST_37 : Operation 122 [36/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 122 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 38 <SV = 37> <Delay = 146.>
+ST_38 : Operation 123 [35/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 123 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 39 <SV = 38> <Delay = 146.>
+ST_39 : Operation 124 [34/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 124 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 40 <SV = 39> <Delay = 146.>
+ST_40 : Operation 125 [33/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 125 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 41 <SV = 40> <Delay = 146.>
+ST_41 : Operation 126 [32/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 126 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 42 <SV = 41> <Delay = 146.>
+ST_42 : Operation 127 [31/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 127 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 43 <SV = 42> <Delay = 146.>
+ST_43 : Operation 128 [30/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 128 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 44 <SV = 43> <Delay = 146.>
+ST_44 : Operation 129 [29/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 129 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 45 <SV = 44> <Delay = 146.>
+ST_45 : Operation 130 [28/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 130 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 46 <SV = 45> <Delay = 146.>
+ST_46 : Operation 131 [27/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 131 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 47 <SV = 46> <Delay = 146.>
+ST_47 : Operation 132 [26/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 132 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 48 <SV = 47> <Delay = 146.>
+ST_48 : Operation 133 [25/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 133 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 49 <SV = 48> <Delay = 146.>
+ST_49 : Operation 134 [24/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 134 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 50 <SV = 49> <Delay = 146.>
+ST_50 : Operation 135 [23/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 135 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 51 <SV = 50> <Delay = 146.>
+ST_51 : Operation 136 [22/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 136 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 52 <SV = 51> <Delay = 146.>
+ST_52 : Operation 137 [21/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 137 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 53 <SV = 52> <Delay = 146.>
+ST_53 : Operation 138 [20/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 138 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 54 <SV = 53> <Delay = 146.>
+ST_54 : Operation 139 [19/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 139 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 55 <SV = 54> <Delay = 146.>
+ST_55 : Operation 140 [18/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 140 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 56 <SV = 55> <Delay = 146.>
+ST_56 : Operation 141 [17/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 141 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 57 <SV = 56> <Delay = 146.>
+ST_57 : Operation 142 [16/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 142 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 58 <SV = 57> <Delay = 146.>
+ST_58 : Operation 143 [15/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 143 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 59 <SV = 58> <Delay = 146.>
+ST_59 : Operation 144 [14/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 144 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 60 <SV = 59> <Delay = 146.>
+ST_60 : Operation 145 [13/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 145 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 61 <SV = 60> <Delay = 146.>
+ST_61 : Operation 146 [12/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 146 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 62 <SV = 61> <Delay = 146.>
+ST_62 : Operation 147 [11/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 147 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 63 <SV = 62> <Delay = 146.>
+ST_63 : Operation 148 [10/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 148 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 64 <SV = 63> <Delay = 146.>
+ST_64 : Operation 149 [9/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 149 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 65 <SV = 64> <Delay = 146.>
+ST_65 : Operation 150 [8/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 150 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 66 <SV = 65> <Delay = 146.>
+ST_66 : Operation 151 [7/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 151 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 67 <SV = 66> <Delay = 146.>
+ST_67 : Operation 152 [6/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 152 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 68 <SV = 67> <Delay = 146.>
+ST_68 : Operation 153 [5/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 153 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 69 <SV = 68> <Delay = 146.>
+ST_69 : Operation 154 [4/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 154 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 70 <SV = 69> <Delay = 146.>
+ST_70 : Operation 155 [3/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 155 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 71 <SV = 70> <Delay = 146.>
+ST_71 : Operation 156 [2/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 156 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 72 <SV = 71> <Delay = 146.>
+ST_72 : Operation 157 [1/71] (146.ns)   --->   "%empty_60 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i64, i64 %gmem1_addr, i32 %zext_ln61" [fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 157 'readreq' 'empty_60' <Predicate = true> <Delay = 146.> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 73 <SV = 72> <Delay = 1.43>
+ST_73 : Operation 158 [1/1] (0.00ns)   --->   "%tmp_4 = bitconcatenate i31 @_ssdm_op_BitConcatenate.i31.i20.i11, i20 %iter_6, i11 0" [fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 158 'bitconcatenate' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 159 [1/1] (0.00ns)   --->   "%empty_61 = wait i32 @_ssdm_op_Wait"   --->   Operation 159 'wait' 'empty_61' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 160 [2/2] (1.43ns)   --->   "%call_ln57 = call void @dma_in_Pipeline_VITIS_LOOP_61_1, i31 %tmp_4, i64 %gmem1, i61 %trunc_ln61_1, i64 %input_stream" [fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 160 'call' 'call_ln57' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 74 <SV = 73> <Delay = 0.00>
+ST_74 : Operation 161 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %iter_c25, void @ap_fifo_str, i32 0, i32 0, void @p_str184, i32 0, i32 0, void @p_str185, void @p_str186, void @p_str187, i32 2, i32 2, i32 16, i32 16, void @p_str188, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 161 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_74 : Operation 162 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_stream, void @empty_8, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 162 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_74 : Operation 163 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %gmem1, void @empty_17, i32 0, i32 0, void @empty, i32 64, i32 4096, void @empty_0, void @empty_1, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 163 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_74 : Operation 164 [1/2] (0.00ns)   --->   "%call_ln57 = call void @dma_in_Pipeline_VITIS_LOOP_61_1, i31 %tmp_4, i64 %gmem1, i61 %trunc_ln61_1, i64 %input_stream" [fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 164 'call' 'call_ln57' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_74 : Operation 165 [1/1] (0.00ns)   --->   "%ret_ln336 = ret" [fft_4k_ssr2_i16_c16_t16.cpp:336]   --->   Operation 165 'ret' 'ret_ln336' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 200.000ns, clock uncertainty: 54.000ns.
+
+ <State 1>: 1.838ns
+The critical path consists of the following:
+	wire read operation ('iter_read', fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'iter' (fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336) [7]  (0.000 ns)
+	fifo write operation ('write_ln57', fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'iter_c25' (fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336) [9]  (1.838 ns)
+
+ <State 2>: 146.000ns
+The critical path consists of the following:
+	wire read operation ('din_read', fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'din' (fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336) [8]  (0.000 ns)
+	'getelementptr' operation 64 bit ('gmem1_addr', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [19]  (0.000 ns)
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 3>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 4>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 5>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 6>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 7>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 8>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 9>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 10>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 11>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 12>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 13>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 14>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 15>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 16>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 17>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 18>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 19>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 20>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 21>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 22>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 23>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 24>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 25>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 26>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 27>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 28>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 29>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 30>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 31>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 32>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 33>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 34>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 35>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 36>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 37>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 38>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 39>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 40>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 41>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 42>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 43>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 44>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 45>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 46>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 47>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 48>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 49>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 50>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 51>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 52>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 53>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 54>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 55>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 56>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 57>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 58>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 59>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 60>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 61>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 62>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 63>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 64>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 65>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 66>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 67>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 68>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 69>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 70>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 71>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 72>: 146.000ns
+The critical path consists of the following:
+	bus request operation ('empty_60', fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) on port 'gmem1' (fft_4k_ssr2_i16_c16_t16.cpp:61->fft_4k_ssr2_i16_c16_t16.cpp:336) [22]  (146.000 ns)
+
+ <State 73>: 1.433ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln57', fft_4k_ssr2_i16_c16_t16.cpp:57->fft_4k_ssr2_i16_c16_t16.cpp:336) to 'dma_in_Pipeline_VITIS_LOOP_61_1' [24]  (1.433 ns)
+
+ <State 74>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

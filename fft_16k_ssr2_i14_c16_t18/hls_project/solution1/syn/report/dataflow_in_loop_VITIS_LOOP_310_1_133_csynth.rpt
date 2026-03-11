@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_VITIS_LOOP_310_1_133'
+================================================================
+* Date:           Tue Mar  3 21:26:53 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+----------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline |
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type   |
+    +---------+---------+----------+----------+-------+-------+----------+
+    |    24729|    24729|  0.247 ms|  0.247 ms|  24728|  24728|  dataflow|
+    +---------+---------+----------+----------+-------+-------+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------+-------------------------------+---------+---------+----------+----------+-------+-------+----------+
+        |                                  |                               |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline |
+        |             Instance             |             Module            |   min   |   max   |    min   |    max   |  min  |  max  |   Type   |
+        +----------------------------------+-------------------------------+---------+---------+----------+----------+-------+-------+----------+
+        |Block_newFuncRoot_proc_proc17_U0  |Block_newFuncRoot_proc_proc17  |        0|        0|      0 ns|      0 ns|      0|      0|        no|
+        |Block_newFuncRoot_proc_proc18_U0  |Block_newFuncRoot_proc_proc18  |        0|        0|      0 ns|      0 ns|      0|      0|        no|
+        |fft_fft_params_U0                 |fft_fft_params_s               |    24727|    24727|  0.247 ms|  0.247 ms|  24728|  24728|  dataflow|
+        |Block_newFuncRoot_proc_proc19_U0  |Block_newFuncRoot_proc_proc19  |        0|        0|      0 ns|      0 ns|      0|      0|        no|
+        +----------------------------------+-------------------------------+---------+---------+----------+----------+-------+-------+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       2|    -|
+|FIFO             |        -|     -|     297|     201|    -|
+|Instance         |       33|     0|   13238|   10898|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|       -|    -|
+|Register         |        -|     -|       -|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |       33|     0|   13535|   11101|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       11|     0|       5|       9|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------+-------------------------------+---------+----+-------+-------+-----+
+    |             Instance             |             Module            | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +----------------------------------+-------------------------------+---------+----+-------+-------+-----+
+    |Block_newFuncRoot_proc_proc17_U0  |Block_newFuncRoot_proc_proc17  |        0|   0|     11|     20|    0|
+    |Block_newFuncRoot_proc_proc18_U0  |Block_newFuncRoot_proc_proc18  |        0|   0|      3|     29|    0|
+    |Block_newFuncRoot_proc_proc19_U0  |Block_newFuncRoot_proc_proc19  |        0|   0|      2|     20|    0|
+    |fft_fft_params_U0                 |fft_fft_params_s               |       33|   0|  13222|  10829|    0|
+    +----------------------------------+-------------------------------+---------+----+-------+-------+-----+
+    |Total                             |                               |       33|   0|  13238|  10898|    0|
+    +----------------------------------+-------------------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------+---------+----+----+-----+------+-----+---------+
+    |     Name     | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------+---------+----+----+-----+------+-----+---------+
+    |empty_U       |        0|  99|   0|    -|     2|   16|       32|
+    |fft_config_U  |        0|  99|   0|    -|     2|   16|       32|
+    |fft_status_U  |        0|  99|   0|    -|     2|    8|       16|
+    +--------------+---------+----+----+-----+------+-----+---------+
+    |Total         |        0| 297|   0|    0|     6|   40|       80|
+    +--------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_idle       |       and|   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+---------------------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++----------------------+-----+-----+------------+---------------------------------------+--------------+
+|twiddle_out1_dout     |   in|   32|     ap_fifo|                           twiddle_out1|       pointer|
+|twiddle_out1_empty_n  |   in|    1|     ap_fifo|                           twiddle_out1|       pointer|
+|twiddle_out1_read     |  out|    1|     ap_fifo|                           twiddle_out1|       pointer|
+|fft2_out1_din         |  out|   32|     ap_fifo|                              fft2_out1|       pointer|
+|fft2_out1_full_n      |   in|    1|     ap_fifo|                              fft2_out1|       pointer|
+|fft2_out1_write       |  out|    1|     ap_fifo|                              fft2_out1|       pointer|
+|ap_clk                |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_310_1.133|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_310_1.133|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_310_1.133|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_310_1.133|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_310_1.133|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_310_1.133|  return value|
+|ap_continue           |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_310_1.133|  return value|
++----------------------+-----+-----+------------+---------------------------------------+--------------+
+

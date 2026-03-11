@@ -1,0 +1,61 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint64" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h" line="254" pragmaType="inline" parentfunction="getSch" off="0" region="0" recursive="0"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h" line="220" pragmaType="inline" parentfunction="getDir" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>::operator<<(std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> > const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="af_range_ref<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0>& af_range_ref<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="fft_16_ssr1_i16_c16_t16.cpp" line="55" pragmaType="loop_tripcount" parentfunction="dma_in" min="0" max="512" avg="256"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h" line="515" pragmaType="inline" parentfunction="fft_syn" off="1" region="0" recursive="0"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h" line="517" pragmaType="aggregate" parentfunction="fft_syn" compact="3" variable="xn"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h" line="518" pragmaType="aggregate" parentfunction="fft_syn" compact="3" variable="xk"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h" line="520" pragmaType="stream" parentfunction="fft_syn" depth="0" type="fifo" variable="xn"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h" line="521" pragmaType="stream" parentfunction="fft_syn" depth="0" type="fifo" variable="xk"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h" line="703" pragmaType="dataflow" parentfunction="fft" disable_start_propagation="1"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h" line="704" pragmaType="interface" parentfunction="fft" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="fft_16_ssr1_i16_c16_t16.cpp" line="160" pragmaType="loop_tripcount" parentfunction="fft_serial_kernel" min="0" max="32" avg="16"/>
+<pragma file="fft_16_ssr1_i16_c16_t16.cpp" line="161" pragmaType="dataflow" parentfunction="fft_serial_kernel" disable_start_propagation="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, true>& ap_range_ref<32, true>::operator=<16, false>(ap_int_base<16, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::ap_int_base<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0>(af_range_ref<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, true>::ap_range_ref(ap_int_base<32, true>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="fft_16_ssr1_i16_c16_t16.cpp" line="80" pragmaType="loop_tripcount" parentfunction="dma_out" min="0" max="512" avg="256"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="af_range_ref<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0>::af_range_ref(ap_fixed_base<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<32, true>(ap_range_ref<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::ip_fft::status_t<fft_16_ssr1_i16_c16_t16::fft_params>, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, true>& ap_range_ref<32, true>::operator=<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0>(af_range_ref<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h" line="0" pragmaType="inline" parentfunction="checkSch" off="0" region="0" recursive="0"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<8, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h" line="211" pragmaType="inline" parentfunction="setDir" off="0" region="0" recursive="0"/>
+<pragma file="/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h" line="239" pragmaType="inline" parentfunction="setSch" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<8, false>::operator=(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(bool)" off="0" region="0" recursive="0"/>
+<pragma file="fft_16_ssr1_i16_c16_t16.cpp" line="173" pragmaType="dataflow" parentfunction="fft_core" disable_start_propagation="0"/>
+<pragma file="fft_16_ssr1_i16_c16_t16.cpp" line="200" pragmaType="interface" parentfunction="fft_16_ssr1_i16_c16_t16_top" mode="s_axilite" port="iter" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fft_16_ssr1_i16_c16_t16.cpp" line="201" pragmaType="interface" parentfunction="fft_16_ssr1_i16_c16_t16_top" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fft_16_ssr1_i16_c16_t16.cpp" line="202" pragmaType="interface" parentfunction="fft_16_ssr1_i16_c16_t16_top" mode="m_axi" port="dout" bundle="gmem2" offset="" name="" depth="512" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="512" channel=""/>
+<pragma file="fft_16_ssr1_i16_c16_t16.cpp" line="203" pragmaType="interface" parentfunction="fft_16_ssr1_i16_c16_t16_top" mode="m_axi" port="din" bundle="gmem1" offset="" name="" depth="512" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="512" channel=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<hls::ip_fft::config_t<fft_16_ssr1_i16_c16_t16::fft_params>, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<8, false>::operator=(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="af_range_ref<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0>& af_range_ref<16, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, true>(ap_range_ref<32, true> const&)" off="0" region="0" recursive="0"/>
+</pragmas>

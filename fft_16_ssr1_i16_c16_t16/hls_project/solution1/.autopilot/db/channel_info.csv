@@ -1,0 +1,9 @@
+grp_fft_core_fu_76,dout_c_U,,chan_status1.csv
+grp_fft_core_fu_76,input_stream_U,,chan_status2.csv
+grp_fft_core_fu_76,iter_c10_U,,chan_status3.csv
+grp_fft_core_fu_76,fft_out_U,,chan_status4.csv
+grp_fft_core_fu_76,iter_c_U,,chan_status5.csv
+grp_fft_core_fu_76.fft_serial_kernel_wrapper_U0,p_channel_U,,chan_status6.csv
+grp_fft_core_fu_76.fft_serial_kernel_wrapper_U0.fft_serial_kernel_U0.dataflow_in_loop_VITIS_LOOP_158_1_U0,empty_U,,chan_status7.csv
+grp_fft_core_fu_76.fft_serial_kernel_wrapper_U0.fft_serial_kernel_U0.dataflow_in_loop_VITIS_LOOP_158_1_U0,fft_config_U,,chan_status8.csv
+grp_fft_core_fu_76.fft_serial_kernel_wrapper_U0.fft_serial_kernel_U0.dataflow_in_loop_VITIS_LOOP_158_1_U0,fft_status_U,,chan_status9.csv

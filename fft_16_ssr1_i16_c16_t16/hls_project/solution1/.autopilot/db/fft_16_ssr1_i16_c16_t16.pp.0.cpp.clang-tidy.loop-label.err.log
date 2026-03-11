@@ -1,0 +1,5 @@
+26 errors generated.
+Error while processing /home/phongtran/Downloads/ssr-fft-main/fft_16_ssr1_i16_c16_t16/hls_project/solution1/.autopilot/db/fft_16_ssr1_i16_c16_t16.pp.0.cpp.
+clang-tidy applied 148 of 148 suggested fixes.
+Suppressed 89 warnings (89 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

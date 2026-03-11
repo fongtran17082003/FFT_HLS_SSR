@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database fft_4k_ssr2_i16_c16_t16_top.wdb

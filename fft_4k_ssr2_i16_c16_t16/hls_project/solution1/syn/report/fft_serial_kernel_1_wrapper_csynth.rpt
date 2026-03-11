@@ -1,0 +1,157 @@
+
+
+================================================================
+== Vitis HLS Report for 'fft_serial_kernel_1_wrapper'
+================================================================
+* Date:           Mon Mar  9 10:32:00 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  0.20 us|  0.146 us|    54.00 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-------+----------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+    |   min   |   max   |    min   |    max   | min |  max  |   Type   |
+    +---------+---------+----------+----------+-----+-------+----------+
+    |        4|    12562|  0.800 us|  2.512 ms|    4|  12562|  dataflow|
+    +---------+---------+----------+----------+-----+-------+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------+---------------------+---------+---------+----------+----------+-----+-------+---------+
+        |                        |                     |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+        |        Instance        |        Module       |   min   |   max   |    min   |    max   | min |  max  |   Type  |
+        +------------------------+---------------------+---------+---------+----------+----------+-----+-------+---------+
+        |entry_proc74_U0         |entry_proc74         |        0|        0|      0 ns|      0 ns|    0|      0|       no|
+        |fft_serial_kernel_1_U0  |fft_serial_kernel_1  |        3|    12561|  0.600 us|  2.512 ms|    3|  12561|       no|
+        +------------------------+---------------------+---------+---------+----------+----------+-----+-------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       2|    -|
+|FIFO             |        -|     -|      99|      67|    -|
+|Instance         |        8|     0|   11850|    9263|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|       9|    -|
+|Register         |        -|     -|       1|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        8|     0|   11950|    9341|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        2|     0|       5|       7|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------+---------------------+---------+----+-------+------+-----+
+    |        Instance        |        Module       | BRAM_18K| DSP|   FF  |  LUT | URAM|
+    +------------------------+---------------------+---------+----+-------+------+-----+
+    |entry_proc74_U0         |entry_proc74         |        0|   0|     34|    38|    0|
+    |fft_serial_kernel_1_U0  |fft_serial_kernel_1  |        8|   0|  11816|  9225|    0|
+    +------------------------+---------------------+---------+----+-------+------+-----+
+    |Total                   |                     |        8|   0|  11850|  9263|    0|
+    +------------------------+---------------------+---------+----+-------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------+---------+----+----+-----+------+-----+---------+
+    |     Name    | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +-------------+---------+----+----+-----+------+-----+---------+
+    |p_channel_U  |        0|  99|   0|    -|     2|   32|       64|
+    +-------------+---------+----+----+-----+------+-----+---------+
+    |Total        |        0|  99|   0|    0|     2|   32|       64|
+    +-------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_idle       |       and|   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------+----+-----------+-----+-----------+
+    |    Name    | LUT| Input Size| Bits| Total Bits|
+    +------------+----+-----------+-----+-----------+
+    |real_start  |   9|          2|    1|          2|
+    +------------+----+-----------+-----+-----------+
+    |Total       |   9|          2|    1|          2|
+    +------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+-----------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++----------------------+-----+-----+------------+-----------------------------+--------------+
+|ap_start              |   in|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|start_full_n          |   in|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|start_out             |  out|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|start_write           |  out|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|ap_clk                |   in|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|ap_continue           |   in|    1|  ap_ctrl_hs|  fft_serial_kernel.1.wrapper|  return value|
+|twiddle_out0_dout     |   in|   32|     ap_fifo|                 twiddle_out0|       pointer|
+|twiddle_out0_empty_n  |   in|    1|     ap_fifo|                 twiddle_out0|       pointer|
+|twiddle_out0_read     |  out|    1|     ap_fifo|                 twiddle_out0|       pointer|
+|fft2_out0_din         |  out|   32|     ap_fifo|                    fft2_out0|       pointer|
+|fft2_out0_full_n      |   in|    1|     ap_fifo|                    fft2_out0|       pointer|
+|fft2_out0_write       |  out|    1|     ap_fifo|                    fft2_out0|       pointer|
+|iter_dout             |   in|   32|     ap_fifo|                         iter|       pointer|
+|iter_empty_n          |   in|    1|     ap_fifo|                         iter|       pointer|
+|iter_read             |  out|    1|     ap_fifo|                         iter|       pointer|
+|iter_c20_din          |  out|   32|     ap_fifo|                     iter_c20|       pointer|
+|iter_c20_full_n       |   in|    1|     ap_fifo|                     iter_c20|       pointer|
+|iter_c20_write        |  out|    1|     ap_fifo|                     iter_c20|       pointer|
++----------------------+-----+-----+------------+-----------------------------+--------------+
+

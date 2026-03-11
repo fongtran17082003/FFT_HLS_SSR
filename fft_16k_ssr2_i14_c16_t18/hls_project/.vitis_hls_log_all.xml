@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:54.103+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_RREADY' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.822+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARUSER' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.817+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARREGION' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.813+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARQOS' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.809+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARPROT' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.803+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARCACHE' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.799+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARLOCK' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.795+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARBURST' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.791+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARSIZE' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.788+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARLEN' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.784+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARID' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.781+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARADDR' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.777+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem2_ARVALID' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.773+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'fft_core/m_axi_gmem1_BREADY' to 0." projectName="hls_project" solutionName="solution1" date="2026-03-03T21:26:53.769+0700" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

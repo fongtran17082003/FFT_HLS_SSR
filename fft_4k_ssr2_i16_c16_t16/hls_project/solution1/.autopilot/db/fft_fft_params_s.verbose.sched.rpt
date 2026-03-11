@@ -1,0 +1,122 @@
+
+
+================================================================
+== Vitis HLS Report for 'fft_fft_params_s'
+================================================================
+* Date:           Mon Mar  9 10:31:58 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  0.20 us|  0.146 us|    54.00 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+----------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+    |   min   |   max   |    min   |    max   |  min |  max |   Type   |
+    +---------+---------+----------+----------+------+------+----------+
+    |     6278|     6278|  1.256 ms|  1.256 ms|  6279|  6279|  dataflow|
+    +---------+---------+----------+----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 2, States = { 1 2 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 146.>
+ST_1 : Operation 3 [2/2] (146.ns)   --->   "%call_ln706 = call void @fft_syn<fft_params>.3, i32 %twiddle_out1, i32 %fft2_out1, i8 %fft_status, i16 %fft_config" [/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:706]   --->   Operation 3 'call' 'call_ln706' <Predicate = true> <Delay = 146.> <CoreInst = "Vivado_FFT">   --->   Core 125 'Vivado_FFT' <Latency = 6278> <II = 1> <Delay = 2.00> <IPBlock> <Opcode : > <InPorts = 2> <OutPorts = 1> <Async> <CReg>
+
+State 2 <SV = 1> <Delay = 146.>
+ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln703 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 1, void @empty" [/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:703]   --->   Operation 4 'specdataflowpipeline' 'specdataflowpipeline_ln703' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %fft_status, void @empty_8, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %fft_config, void @empty_8, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %fft2_out1, void @empty_8, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %twiddle_out1, void @empty_8, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln703 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_15, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0" [/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:703]   --->   Operation 9 'specinterface' 'specinterface_ln703' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/2] (146.ns)   --->   "%call_ln706 = call void @fft_syn<fft_params>.3, i32 %twiddle_out1, i32 %fft2_out1, i8 %fft_status, i16 %fft_config" [/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:706]   --->   Operation 10 'call' 'call_ln706' <Predicate = true> <Delay = 146.> <CoreInst = "Vivado_FFT">   --->   Core 125 'Vivado_FFT' <Latency = 6278> <II = 1> <Delay = 2.00> <IPBlock> <Opcode : > <InPorts = 2> <OutPorts = 1> <Async> <CReg>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%ret_ln723 = ret" [/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:723]   --->   Operation 11 'ret' 'ret_ln723' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 200.000ns, clock uncertainty: 54.000ns.
+
+ <State 1>: 146.000ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln706', /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:706) to 'fft_syn<fft_params>.3' [11]  (146.000 ns)
+
+ <State 2>: 146.000ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln706', /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h:706) to 'fft_syn<fft_params>.3' [11]  (146.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

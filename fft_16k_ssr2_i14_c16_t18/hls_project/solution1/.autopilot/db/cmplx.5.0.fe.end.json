@@ -1,0 +1,404 @@
+{
+    "1": {
+        "name": "dma_in_Pipeline_VITIS_LOOP_61_1",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "336",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "Block_newFuncRoot_proc_proc",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "314",
+        "instructions": "2",
+        "total_instructions": "2",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "3": {
+        "name": "_ZN24fft_16k_ssr2_i14_c16_t1817fft_serial_kernelERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEES9_i.100_for.inc",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "62",
+        "calls": "2 5 17 30",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "fft_serial_kernel.wrapper",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "349",
+        "instructions": "8",
+        "total_instructions": "89",
+        "calls": "22 14",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "Block_newFuncRoot_proc_proc15",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "314",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "fft_16k_ssr2_i14_c16_t18_top",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "359",
+        "instructions": "18",
+        "total_instructions": "662",
+        "calls": "9",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "get_phase_factor",
+        "file": ".\/fft_16k_ssr2_i14_c16_t18.hpp",
+        "fileloc": "1093",
+        "instructions": "10",
+        "total_instructions": "10",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "1"
+        }
+    },
+    "7": {
+        "name": "dma_out",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "353",
+        "instructions": "20",
+        "total_instructions": "42",
+        "calls": "31",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "joiner",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "283",
+        "instructions": "12",
+        "total_instructions": "33",
+        "calls": "20",
+        "basicblocks": "1"
+    },
+    "9": {
+        "name": "fft_core",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "320",
+        "instructions": "64",
+        "total_instructions": "644",
+        "calls": "15 33 21 19 24 25 4 8 7",
+        "basicblocks": "1"
+    },
+    "10": {
+        "name": "fft<fft_16k_ssr2_i14_c16_t18::fft_params>",
+        "file": "hls_fft_x_complex.h",
+        "fileloc": "696",
+        "instructions": "8",
+        "total_instructions": "38",
+        "calls": "26",
+        "basicblocks": "1"
+    },
+    "11": {
+        "name": "Block_newFuncRoot_proc_proc19",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "316",
+        "instructions": "3",
+        "total_instructions": "3",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "12": {
+        "name": "_ZN24fft_16k_ssr2_i14_c16_t1817fft_serial_kernelERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEES9_i_for.inc",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "62",
+        "calls": "18 28 10 11",
+        "basicblocks": "1"
+    },
+    "13": {
+        "name": "radix2p_Pipeline_VITIS_LOOP_172_1_VITIS_LOOP_175_2",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "168",
+        "instructions": "35",
+        "total_instructions": "35",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "fft_serial_kernel",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "301",
+        "instructions": "15",
+        "total_instructions": "77",
+        "calls": "12",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "entry_proc",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "16": {
+        "name": "twiddle_Pipeline_VITIS_LOOP_264_1_VITIS_LOOP_267_2",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "264",
+        "instructions": "47",
+        "total_instructions": "57",
+        "calls": "6",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "fft<fft_16k_ssr2_i14_c16_t18::fft_params>",
+        "file": "hls_fft_x_complex.h",
+        "fileloc": "696",
+        "instructions": "8",
+        "total_instructions": "38",
+        "calls": "32",
+        "basicblocks": "1"
+    },
+    "18": {
+        "name": "Block_newFuncRoot_proc_proc17",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "314",
+        "instructions": "2",
+        "total_instructions": "2",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "19": {
+        "name": "radix2p",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "168",
+        "instructions": "10",
+        "total_instructions": "45",
+        "calls": "13",
+        "basicblocks": "1"
+    },
+    "20": {
+        "name": "joiner_Pipeline_VITIS_LOOP_285_1_VITIS_LOOP_288_2",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "283",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "reorder",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "107",
+        "instructions": "114",
+        "total_instructions": "158",
+        "calls": "27",
+        "basicblocks": "15",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "entry_proc107",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "23": {
+        "name": "fft_serial_kernel.1",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "301",
+        "instructions": "15",
+        "total_instructions": "77",
+        "calls": "3",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "twiddle",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "258",
+        "instructions": "13",
+        "total_instructions": "70",
+        "calls": "16",
+        "basicblocks": "1"
+    },
+    "25": {
+        "name": "fft_serial_kernel.1.wrapper",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "348",
+        "instructions": "9",
+        "total_instructions": "92",
+        "calls": "29 23",
+        "basicblocks": "1"
+    },
+    "26": {
+        "name": "fft_syn<fft_16k_ssr2_i14_c16_t18::fft_params>",
+        "file": "hls_fft_x_complex.h",
+        "fileloc": "509",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "reorder_Pipeline_pipeup_l1_pipeup_l2",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "119",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "Block_newFuncRoot_proc_proc18",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "314",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "entry_proc74",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "0",
+        "instructions": "6",
+        "total_instructions": "6",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "30": {
+        "name": "Block_newFuncRoot_proc_proc16",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "316",
+        "instructions": "3",
+        "total_instructions": "3",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "31": {
+        "name": "dma_out_Pipeline_VITIS_LOOP_90_1",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "353",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "32": {
+        "name": "fft_syn<fft_16k_ssr2_i14_c16_t18::fft_params>",
+        "file": "hls_fft_x_complex.h",
+        "fileloc": "509",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "33": {
+        "name": "dma_in",
+        "file": "fft_16k_ssr2_i14_c16_t18.cpp",
+        "fileloc": "336",
+        "instructions": "20",
+        "total_instructions": "47",
+        "calls": "1",
+        "basicblocks": "1"
+    }
+}

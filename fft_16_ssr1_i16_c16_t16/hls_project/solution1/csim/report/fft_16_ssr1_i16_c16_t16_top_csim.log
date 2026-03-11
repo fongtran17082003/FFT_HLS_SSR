@@ -1,0 +1,12 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../testbench.cpp in debug mode
+   Compiling ../../../../fft_16_ssr1_i16_c16_t16.cpp in debug mode
+   Generating csim.exe
+Generating test data
+Generating truth data
+Loading the HLS input buffer
+Running the HLS component
+ERROR: Hi(12)out of bound(8) in range()
+ERR: [SIM 100] CSim failed with errors.
+INFO: [SIM 3] *************** CSIM finish ***************

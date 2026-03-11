@@ -1,0 +1,352 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h, 
+                   Line: 565, Column: 34 }
+Function:        _ZN3hls7fft_synIN23fft_16_ssr1_i16_c16_t1610fft_paramsEEEvRNS_6streamISt7complexI8ap_fixedIXmldvplsrT_11input_widthLi7ELi8ELi8EELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEERNS3_IS4_IS5_IXmldvplsrS6_12output_widthLi7ELi8ELi8EEXplmimldvplsrS6_12output_widthLi7ELi8ELi8EsrS6_11input_widthLi1EELS7_5ELS8_3ELi0EEELi0EEERNS3_INS_6ip_fft8status_tIS6_EELi0EEERNS3_INSH_8config_tIS6_EELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::ip_fft::config_t<fft_16_ssr1_i16_c16_t16::fft_params>::getDir(unsigned int)'
+    DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h, 
+                       Line: 221, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void hls::fft_syn<fft_16_ssr1_i16_c16_t16::fft_params>(hls::stream<std::complex<ap_fixed<(((fft_16_ssr1_i16_c16_t16::fft_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, hls::stream<std::complex<ap_fixed<(((fft_16_ssr1_i16_c16_t16::fft_params::output_width) + (7)) / (8)) * (8), (((((fft_16_ssr1_i16_c16_t16::fft_params::output_width) + (7)) / (8)) * (8)) - (fft_16_ssr1_i16_c16_t16::fft_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, hls::stream<hls::ip_fft::status_t<fft_16_ssr1_i16_c16_t16::fft_params>, 0>&, hls::stream<hls::ip_fft::config_t<fft_16_ssr1_i16_c16_t16::fft_params>, 0>&)'
+    DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h, 
+                       Line: 514, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h, 
+                   Line: 556, Column: 37 }
+Function:        _ZN3hls7fft_synIN23fft_16_ssr1_i16_c16_t1610fft_paramsEEEvRNS_6streamISt7complexI8ap_fixedIXmldvplsrT_11input_widthLi7ELi8ELi8EELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEERNS3_IS4_IS5_IXmldvplsrS6_12output_widthLi7ELi8ELi8EEXplmimldvplsrS6_12output_widthLi7ELi8ELi8EsrS6_11input_widthLi1EELS7_5ELS8_3ELi0EEELi0EEERNS3_INS_6ip_fft8status_tIS6_EELi0EEERNS3_INSH_8config_tIS6_EELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::ip_fft::config_t<fft_16_ssr1_i16_c16_t16::fft_params>::getDir(unsigned int)'
+    DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h, 
+                       Line: 221, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void hls::fft_syn<fft_16_ssr1_i16_c16_t16::fft_params>(hls::stream<std::complex<ap_fixed<(((fft_16_ssr1_i16_c16_t16::fft_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, hls::stream<std::complex<ap_fixed<(((fft_16_ssr1_i16_c16_t16::fft_params::output_width) + (7)) / (8)) * (8), (((((fft_16_ssr1_i16_c16_t16::fft_params::output_width) + (7)) / (8)) * (8)) - (fft_16_ssr1_i16_c16_t16::fft_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, hls::stream<hls::ip_fft::status_t<fft_16_ssr1_i16_c16_t16::fft_params>, 0>&, hls::stream<hls::ip_fft::config_t<fft_16_ssr1_i16_c16_t16::fft_params>, 0>&)'
+    DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h, 
+                       Line: 514, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h, 
+                   Line: 555, Column: 39 }
+Function:        _ZN3hls7fft_synIN23fft_16_ssr1_i16_c16_t1610fft_paramsEEEvRNS_6streamISt7complexI8ap_fixedIXmldvplsrT_11input_widthLi7ELi8ELi8EELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEERNS3_IS4_IS5_IXmldvplsrS6_12output_widthLi7ELi8ELi8EEXplmimldvplsrS6_12output_widthLi7ELi8ELi8EsrS6_11input_widthLi1EELS7_5ELS8_3ELi0EEELi0EEERNS3_INS_6ip_fft8status_tIS6_EELi0EEERNS3_INSH_8config_tIS6_EELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::ip_fft::config_t<fft_16_ssr1_i16_c16_t16::fft_params>::getSch(unsigned int)'
+    DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h, 
+                       Line: 255, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void hls::fft_syn<fft_16_ssr1_i16_c16_t16::fft_params>(hls::stream<std::complex<ap_fixed<(((fft_16_ssr1_i16_c16_t16::fft_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, hls::stream<std::complex<ap_fixed<(((fft_16_ssr1_i16_c16_t16::fft_params::output_width) + (7)) / (8)) * (8), (((((fft_16_ssr1_i16_c16_t16::fft_params::output_width) + (7)) / (8)) * (8)) - (fft_16_ssr1_i16_c16_t16::fft_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, hls::stream<hls::ip_fft::status_t<fft_16_ssr1_i16_c16_t16::fft_params>, 0>&, hls::stream<hls::ip_fft::config_t<fft_16_ssr1_i16_c16_t16::fft_params>, 0>&)'
+    DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h, 
+                       Line: 514, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 155, Column: 17 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t1617fft_serial_kernelERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEES9_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::ip_fft::config_t<fft_16_ssr1_i16_c16_t16::fft_params>::setDir(bool, unsigned int)'
+    DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h, 
+                       Line: 212, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fft_16_ssr1_i16_c16_t16::fft_serial_kernel(hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, int)'
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 150, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 156, Column: 17 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t1617fft_serial_kernelERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEES9_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::ip_fft::config_t<fft_16_ssr1_i16_c16_t16::fft_params>::setSch(unsigned int, unsigned int)'
+    DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/hls_fft.h, 
+                       Line: 240, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fft_16_ssr1_i16_c16_t16::fft_serial_kernel(hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, int)'
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 150, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 175, Column: 34 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t168fft_coreEP6ap_intILi32EES2_i
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            input_stream
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 176, Column: 37 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t168fft_coreEP6ap_intILi32EES2_i
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            fft_out
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 53, Column: 22 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t166dma_inEP6ap_intILi32EERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEEi
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        din1seq
+  - ArrayName:       din
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_53_1
+  - String:          ' '
+  - LoopLoc:         'fft_16_ssr1_i16_c16_t16.cpp:53:22'
+  - String:          ' '
+  - Function:        'fft_16_ssr1_i16_c16_t16::dma_in(ap_int<32>*, hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, int)'
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 50, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 58, Column: 34 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.6
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 78, Column: 22 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t167dma_outERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEEP6ap_intILi32EEi
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        dout3seq
+  - ArrayName:       dout
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_78_1
+  - String:          ' '
+  - LoopLoc:         'fft_16_ssr1_i16_c16_t16.cpp:78:22'
+  - String:          ' '
+  - Function:        'fft_16_ssr1_i16_c16_t16::dma_out(hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, ap_int<32>*, int)'
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 75, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 84, Column: 15 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.16
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 53, Column: 22 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t166dma_inEP6ap_intILi32EERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEEi
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length has been widened by '
+  - Factor:          '16'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 53, Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          din1seq
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq
+  - ArrayName:       din
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_53_1
+  - String:          ' '
+  - LoopLoc:         'fft_16_ssr1_i16_c16_t16.cpp:53:22'
+  - String:          ' '
+  - Function:        'fft_16_ssr1_i16_c16_t16::dma_in(ap_int<32>*, hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, int)'
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 50, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 78, Column: 22 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t167dma_outERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEEP6ap_intILi32EEi
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length has been widened by '
+  - Factor:          '16'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 78, Column: 22 }
+  - OrigDirection:   write
+  - OrigID:          dout3seq
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq
+  - ArrayName:       dout
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_78_1
+  - String:          ' '
+  - LoopLoc:         'fft_16_ssr1_i16_c16_t16.cpp:78:22'
+  - String:          ' '
+  - Function:        'fft_16_ssr1_i16_c16_t16::dma_out(hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, ap_int<32>*, int)'
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 75, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_78_1
+  - String:          '> at '
+  - LoopLoc:         'fft_16_ssr1_i16_c16_t16.cpp:78:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_53_1
+  - String:          '> at '
+  - LoopLoc:         'fft_16_ssr1_i16_c16_t16.cpp:53:22'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 53, Column: 22 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t166dma_inEP6ap_intILi32EERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEEi.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - Function:        'fft_16_ssr1_i16_c16_t16::dma_in(ap_int<32>*, hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, int) (.1)'
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 50, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 53, Column: 22 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t166dma_inEP6ap_intILi32EERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEEi.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 78, Column: 22 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t167dma_outERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEEP6ap_intILi32EEi.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'fft_16_ssr1_i16_c16_t16::dma_out(hls::stream<std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, 0>&, ap_int<32>*, int) (.1)'
+    DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 75, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: fft_16_ssr1_i16_c16_t16.cpp, Line: 78, Column: 22 }
+Function:        _ZN23fft_16_ssr1_i16_c16_t167dma_outERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEEP6ap_intILi32EEi.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Failure
+Pass:            reflow-lower-intrinsics
+Name:            HiddenIP
+DebugLoc:        { File: /home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_fft_x_complex.h, 
+                   Line: 525, Column: 2 }
+Function:        _ZN3hls7fft_synIN23fft_16_ssr1_i16_c16_t1610fft_paramsEEEvRNS_6streamISt7complexI8ap_fixedIXmldvplsrT_11input_widthLi7ELi8ELi8EELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEERNS3_IS4_IS5_IXmldvplsrS6_12output_widthLi7ELi8ELi8EEXplmimldvplsrS6_12output_widthLi7ELi8ELi8EsrS6_11input_widthLi1EELS7_5ELS8_3ELi0EEELi0EEERNS3_INS_6ip_fft8status_tIS6_EELi0EEERNS3_INSH_8config_tIS6_EELi0EEE.1
+Args:            
+  - String:          'Impl='
+  - String:          vivado_fft
+  - String:          ' in '
+  - BuiltinName:     __fpga_ip
+  - String:          ' is deprecated. Consider using a different IP implementation.'
+...

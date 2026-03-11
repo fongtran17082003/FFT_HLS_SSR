@@ -1,0 +1,7 @@
+Running: xsim.dir/fft_4k_ssr2_i16_c16_t16_top/xsimk -simmode gui -wdb fft_4k_ssr2_i16_c16_t16_top.wdb -simrunnum 0 -socket 51153
+Design successfully loaded
+Design Loading Memory Usage: 86016 KB (Peak: 86464 KB)
+Design Loading CPU Usage: 100 ms
+Simulation completed
+Simulation Memory Usage: 185684 KB (Peak: 225284 KB)
+Simulation CPU Usage: 46530 ms

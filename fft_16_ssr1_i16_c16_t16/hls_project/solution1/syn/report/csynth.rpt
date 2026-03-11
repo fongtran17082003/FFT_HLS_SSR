@@ -1,0 +1,209 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fft_16_ssr1_i16_c16_t16_top'
+================================================================
++ General Information: 
+    * Date:           Tue Mar  3 20:53:55 2026
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        hls_project
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+-----+------------+-----------+-----+
+    |                  Modules                  | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |           |     |            |           |     |
+    |                  & Loops                  | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM    | DSP |     FF     |    LUT    | URAM|
+    +-------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+-----+------------+-----------+-----+
+    |+ fft_16_ssr1_i16_c16_t16_top              |     -|  0.00|     3406|  1.022e+04|         -|     3407|     -|        no|  117 (40%)|    -|  10406 (4%)|  9127 (7%)|    -|
+    | + fft_core*                               |     -|  0.00|     3404|  1.021e+04|         -|     3332|     -|  dataflow|    1 (~0%)|    -|   6557 (2%)|  5300 (4%)|    -|
+    |  + dma_in                                 |     -|  0.00|      588|  1.764e+03|         -|      588|     -|        no|          -|    -|  1222 (~0%)|  816 (~0%)|    -|
+    |   + dma_in_Pipeline_VITIS_LOOP_53_1       |     -|  0.00|      515|  1.545e+03|         -|      515|     -|        no|          -|    -|  1032 (~0%)|  174 (~0%)|    -|
+    |    o VITIS_LOOP_53_1                      |     -|  2.19|      513|  1.539e+03|         3|        1|   512|       yes|          -|    -|           -|          -|    -|
+    |  + fft_serial_kernel_wrapper*             |     -|  0.00|     3332|  9.996e+03|         -|     3332|     -|  dataflow|    1 (~0%)|    -|   4042 (1%)|  2804 (2%)|    -|
+    |   + entry_proc42                          |     -|  0.00|        0|      0.000|         -|        0|     -|        no|          -|    -|    34 (~0%)|   38 (~0%)|    -|
+    |   + fft_serial_kernel                     |     -|  0.00|     3331|  9.993e+03|         -|     3331|     -|        no|    1 (~0%)|    -|   3909 (1%)|  2697 (2%)|    -|
+    |    o VITIS_LOOP_158_1                     |     -|  2.19|     3330|  9.990e+03|       107|        -|    32|        no|          -|    -|           -|          -|    -|
+    |     + dataflow_in_loop_VITIS_LOOP_158_1*  |     -|  0.00|      105|    315.000|         -|      104|     -|  dataflow|    1 (~0%)|    -|   3401 (1%)|  2577 (2%)|    -|
+    |      + Block_newFuncRoot_proc_proc        |     -|  1.09|        0|      0.000|         -|        0|     -|        no|          -|    -|     6 (~0%)|   20 (~0%)|    -|
+    |      + Block_newFuncRoot_proc_proc5       |     -|  1.09|        0|      0.000|         -|        0|     -|        no|          -|    -|     3 (~0%)|   29 (~0%)|    -|
+    |      + fft_fft_params_s*                  |     -|  0.00|      103|    309.000|         -|      104|     -|  dataflow|    1 (~0%)|    -|   3093 (1%)|  2305 (1%)|    -|
+    |       + fft_syn_fft_params_s              |     -|  0.19|      103|    309.000|         -|      103|     -|        no|        N/A|  N/A|         N/A|        N/A|  N/A|
+    |      + Block_newFuncRoot_proc_proc6       |     -|  1.09|        0|      0.000|         -|        0|     -|        no|          -|    -|     2 (~0%)|   20 (~0%)|    -|
+    |  + entry_proc                             |     -|  1.09|        0|      0.000|         -|        0|     -|        no|          -|    -|     3 (~0%)|   29 (~0%)|    -|
+    |  + dma_out                                |     -|  0.00|      587|  1.761e+03|         -|      587|     -|        no|          -|    -|   793 (~0%)|  1286 (1%)|    -|
+    |   + dma_out_Pipeline_VITIS_LOOP_78_1      |     -|  0.00|      515|  1.545e+03|         -|      515|     -|        no|          -|    -|   550 (~0%)|  633 (~0%)|    -|
+    |    o VITIS_LOOP_78_1                      |     -|  2.19|      513|  1.539e+03|         3|        1|   512|       yes|          -|    -|           -|          -|    -|
+    +-------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+-----+------------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem1 | 32 -> 512  | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=58           |
+| m_axi_gmem2 | 32 -> 512  | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=58           |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | din_1    | 0x10   | 32    | W      | Data signal of din               |                                                                      |
+| s_axi_control | din_2    | 0x14   | 32    | W      | Data signal of din               |                                                                      |
+| s_axi_control | dout_1   | 0x1c   | 32    | W      | Data signal of dout              |                                                                      |
+| s_axi_control | dout_2   | 0x20   | 32    | W      | Data signal of dout              |                                                                      |
+| s_axi_control | iter     | 0x28   | 32    | W      | Data signal of iter              |                                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-------------+
+| Argument | Direction | Datatype    |
++----------+-----------+-------------+
+| din      | in        | ap_int<32>* |
+| dout     | out       | ap_int<32>* |
+| iter     | in        | int         |
++----------+-----------+-------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+----------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                          |
++----------+---------------+-----------+----------+----------------------------------+
+| din      | m_axi_gmem1   | interface |          |                                  |
+| din      | s_axi_control | register  | offset   | name=din_1 offset=0x10 range=32  |
+| din      | s_axi_control | register  | offset   | name=din_2 offset=0x14 range=32  |
+| dout     | m_axi_gmem2   | interface |          |                                  |
+| dout     | s_axi_control | register  | offset   | name=dout_1 offset=0x1c range=32 |
+| dout     | s_axi_control | register  | offset   | name=dout_2 offset=0x20 range=32 |
+| iter     | s_axi_control | register  |          | name=iter offset=0x28 range=32   |
++----------+---------------+-----------+----------+----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+----------+-------+
+| HW Interface | Direction | Length   | Width |
++--------------+-----------+----------+-------+
+| m_axi_gmem1  | read      | variable | 512   |
+| m_axi_gmem2  | write     | variable | 512   |
++--------------+-----------+----------+-------+
+
+* All M_AXI Variable Accesses
++--------------+----------+-----------------------------------+-----------+--------------+----------+-----------------+-----------------------------------+
+| HW Interface | Variable | Access Location                   | Direction | Burst Status | Length   | Loop            | Loop Location                     |
++--------------+----------+-----------------------------------+-----------+--------------+----------+-----------------+-----------------------------------+
+| m_axi_gmem1  | din      | fft_16_ssr1_i16_c16_t16.cpp:58:34 | read      | Widened      | variable | VITIS_LOOP_53_1 | fft_16_ssr1_i16_c16_t16.cpp:53:22 |
+| m_axi_gmem1  | din      | fft_16_ssr1_i16_c16_t16.cpp:58:34 | read      | Inferred     | variable | VITIS_LOOP_53_1 | fft_16_ssr1_i16_c16_t16.cpp:53:22 |
+| m_axi_gmem2  | dout     | fft_16_ssr1_i16_c16_t16.cpp:84:15 | write     | Widened      | variable | VITIS_LOOP_78_1 | fft_16_ssr1_i16_c16_t16.cpp:78:22 |
+| m_axi_gmem2  | dout     | fft_16_ssr1_i16_c16_t16.cpp:84:15 | write     | Inferred     | variable | VITIS_LOOP_78_1 | fft_16_ssr1_i16_c16_t16.cpp:78:22 |
++--------------+----------+-----------------------------------+-----------+--------------+----------+-----------------+-----------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------+-----+--------+----------+-----+--------+---------+
+| Name                                  | DSP | Pragma | Variable | Op  | Impl   | Latency |
++---------------------------------------+-----+--------+----------+-----+--------+---------+
+| + fft_16_ssr1_i16_c16_t16_top         | 0   |        |          |     |        |         |
+|  + fft_core                           | 0   |        |          |     |        |         |
+|   + dma_in                            | 0   |        |          |     |        |         |
+|    + dma_in_Pipeline_VITIS_LOOP_53_1  | 0   |        |          |     |        |         |
+|      add_ln53_fu_134_p2               |     |        | add_ln53 | add | fabric | 0       |
+|   + dma_out                           | 0   |        |          |     |        |         |
+|    + dma_out_Pipeline_VITIS_LOOP_78_1 | 0   |        |          |     |        |         |
+|      add_ln78_fu_133_p2               |     |        | add_ln78 | add | fabric | 0       |
++---------------------------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------------------------+--------------+-------------+------+------+--------+--------------+------+---------+------------------+
+| Name                                    | Usage        | Type        | BRAM | URAM | Pragma | Variable     | Impl | Latency | Bitwidth, Depth, |
+|                                         |              |             |      |      |        |              |      |         | Banks            |
++-----------------------------------------+--------------+-------------+------+------+--------+--------------+------+---------+------------------+
+| + fft_16_ssr1_i16_c16_t16_top           |              |             | 117  | 0    |        |              |      |         |                  |
+|   control_s_axi_U                       | interface    | s_axilite   |      |      |        |              |      |         |                  |
+|   gmem1_m_axi_U                         | interface    | m_axi       | 58   |      |        |              |      |         |                  |
+|   gmem2_m_axi_U                         | interface    | m_axi       | 58   |      |        |              |      |         |                  |
+|  + fft_core                             |              |             | 1    | 0    |        |              |      |         |                  |
+|    dout_c_U                             | fifo channel | scalar prop |      |      |        | dout_c       | srl  | 0       | 64, 4, 1         |
+|    input_stream_U                       | fifo channel | stream      |      |      |        | input_stream | srl  | 0       | 32, 2, 1         |
+|    iter_c10_U                           | fifo channel | scalar prop |      |      |        | iter_c10     | srl  | 0       | 32, 2, 1         |
+|    fft_out_U                            | fifo channel | stream      |      |      |        | fft_out      | srl  | 0       | 32, 2, 1         |
+|    iter_c_U                             | fifo channel | scalar prop |      |      |        | iter_c       | srl  | 0       | 28, 2, 1         |
+|   + fft_serial_kernel_wrapper           |              |             | 1    | 0    |        |              |      |         |                  |
+|     p_channel_U                         | fifo channel | task level  |      |      |        | p_channel    | srl  | 0       | 32, 2, 1         |
+|    + fft_serial_kernel                  |              |             | 1    | 0    |        |              |      |         |                  |
+|     + dataflow_in_loop_VITIS_LOOP_158_1 |              |             | 1    | 0    |        |              |      |         |                  |
+|       empty_U                           | fifo channel | task level  |      |      |        | empty        | srl  | 0       | 8, 2, 1          |
+|       fft_config_U                      | fifo channel | stream      |      |      |        | fft_config   | srl  | 0       | 8, 2, 1          |
+|       fft_status_U                      | fifo channel | stream      |      |      |        | fft_status   | srl  | 0       | 8, 2, 1          |
++-----------------------------------------+--------------+-------------+------+------+--------+--------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+---------+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type     | Options | Location                                    | Messages                                                                                                                                                                           |
++----------+---------+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dataflow |         | fft_16_ssr1_i16_c16_t16.cpp:173 in fft_core | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region |
++----------+---------+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++----------------+--------------------------------------------------------------------------+------------------------------------------------------------------------+
+| Type           | Options                                                                  | Location                                                               |
++----------------+--------------------------------------------------------------------------+------------------------------------------------------------------------+
+| loop_tripcount | max=FFT_ITER*FFT_SIZE                                                    | fft_16_ssr1_i16_c16_t16.cpp:55 in dma_in                               |
+| loop_tripcount | max=FFT_ITER*FFT_SIZE                                                    | fft_16_ssr1_i16_c16_t16.cpp:80 in dma_out                              |
+| loop_tripcount | max=FFT_ITER                                                             | fft_16_ssr1_i16_c16_t16.cpp:98 in radix4s                              |
+| pipeline       | II=4                                                                     | fft_16_ssr1_i16_c16_t16.cpp:99 in radix4s                              |
+| loop_tripcount | max=FFT_ITER                                                             | fft_16_ssr1_i16_c16_t16.cpp:160 in fft_serial_kernel                   |
+| dataflow       |                                                                          | fft_16_ssr1_i16_c16_t16.cpp:161 in fft_serial_kernel                   |
+| interface      | mode=s_axilite port=iter                                                 | fft_16_ssr1_i16_c16_t16.cpp:200 in fft_16_ssr1_i16_c16_t16_top, iter   |
+| interface      | mode=s_axilite port=return                                               | fft_16_ssr1_i16_c16_t16.cpp:201 in fft_16_ssr1_i16_c16_t16_top, return |
+| interface      | mode=m_axi bundle=gmem2 depth=sim_depth max_widen_bitwidth=512 port=dout | fft_16_ssr1_i16_c16_t16.cpp:202 in fft_16_ssr1_i16_c16_t16_top, dout   |
+| interface      | mode=m_axi bundle=gmem1 depth=sim_depth max_widen_bitwidth=512 port=din  | fft_16_ssr1_i16_c16_t16.cpp:203 in fft_16_ssr1_i16_c16_t16_top, din    |
++----------------+--------------------------------------------------------------------------+------------------------------------------------------------------------+
+
+

@@ -1,0 +1,74 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "fft_16_ssr1_i16_c16_t16.cpp",
+    "fileloc": 195,
+    "instructions": 10,
+    "name": "fft_16_ssr1_i16_c16_t16_top",
+    "total_instructions": 160
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fft_16_ssr1_i16_c16_t16.cpp",
+    "fileloc": 47,
+    "instructions": 32,
+    "name": "dma_in",
+    "total_instructions": 45
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "5",
+    "file": "fft_16_ssr1_i16_c16_t16.cpp",
+    "fileloc": 147,
+    "instructions": 8,
+    "name": "fft_serial_kernel",
+    "total_instructions": 46
+  },
+  "3": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fft_16_ssr1_i16_c16_t16.cpp",
+    "fileloc": 72,
+    "instructions": 37,
+    "name": "dma_out",
+    "total_instructions": 49
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 696,
+    "instructions": 3,
+    "name": "fft<fft_16_ssr1_i16_c16_t16::fft_params>",
+    "total_instructions": 26
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "fft_16_ssr1_i16_c16_t16.cpp",
+    "fileloc": 0,
+    "instructions": 12,
+    "name": "_ZN23fft_16_ssr1_i16_c16_t1617fft_serial_kernelERN3hls6streamISt7complexI8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEELi0EEES9_i_for.inc",
+    "total_instructions": 38
+  },
+  "6": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "hls_fft_x_complex.h",
+    "fileloc": 509,
+    "instructions": 23,
+    "name": "fft_syn<fft_16_ssr1_i16_c16_t16::fft_params>",
+    "total_instructions": 23
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "1 2 3",
+    "file": "fft_16_ssr1_i16_c16_t16.cpp",
+    "fileloc": 168,
+    "instructions": 10,
+    "name": "fft_core",
+    "total_instructions": 150
+  }
+}

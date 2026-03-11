@@ -1,0 +1,129 @@
+
+
+================================================================
+== Vitis HLS Report for 'get_phase_factor'
+================================================================
+* Date:           Mon Mar  9 10:31:57 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  0.20 us|  1.237 ns|    54.00 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1|  0.200 us|  0.200 us|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.23>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%i_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %i" [./fft_4k_ssr2_i16_c16_t16.hpp:325]   --->   Operation 3 'read' 'i_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%zext_ln330 = zext i11 %i_read" [./fft_4k_ssr2_i16_c16_t16.hpp:330]   --->   Operation 4 'zext' 'zext_ln330' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%w_lut_addr = getelementptr i31 %w_lut, i64 0, i64 %zext_ln330" [./fft_4k_ssr2_i16_c16_t16.hpp:330]   --->   Operation 5 'getelementptr' 'w_lut_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [2/2] (1.23ns)   --->   "%w_lut_load = load i11 %w_lut_addr" [./fft_4k_ssr2_i16_c16_t16.hpp:330]   --->   Operation 6 'load' 'w_lut_load' <Predicate = true> <Delay = 1.23> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 31> <Depth = 2048> <ROM>
+
+State 2 <SV = 1> <Delay = 1.23>
+ST_2 : Operation 7 [1/2] (1.23ns)   --->   "%w_lut_load = load i11 %w_lut_addr" [./fft_4k_ssr2_i16_c16_t16.hpp:330]   --->   Operation 7 'load' 'w_lut_load' <Predicate = true> <Delay = 1.23> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 31> <Depth = 2048> <ROM>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%trunc_ln330 = trunc i31 %w_lut_load" [./fft_4k_ssr2_i16_c16_t16.hpp:330]   --->   Operation 8 'trunc' 'trunc_ln330' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%w_M_imag_write_assign = partselect i15 @_ssdm_op_PartSelect.i15.i31.i32.i32, i31 %w_lut_load, i32 16, i32 30" [./fft_4k_ssr2_i16_c16_t16.hpp:330]   --->   Operation 9 'partselect' 'w_M_imag_write_assign' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%sext_ln330 = sext i15 %w_M_imag_write_assign" [./fft_4k_ssr2_i16_c16_t16.hpp:330]   --->   Operation 10 'sext' 'sext_ln330' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%mrv = insertvalue i32 <undef>, i16 %trunc_ln330" [./fft_4k_ssr2_i16_c16_t16.hpp:331]   --->   Operation 11 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i32 %mrv, i16 %sext_ln330" [./fft_4k_ssr2_i16_c16_t16.hpp:331]   --->   Operation 12 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln331 = ret i32 %mrv_1" [./fft_4k_ssr2_i16_c16_t16.hpp:331]   --->   Operation 13 'ret' 'ret_ln331' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 200.000ns, clock uncertainty: 54.000ns.
+
+ <State 1>: 1.237ns
+The critical path consists of the following:
+	wire read operation ('i_read', ./fft_4k_ssr2_i16_c16_t16.hpp:325) on port 'i' (./fft_4k_ssr2_i16_c16_t16.hpp:325) [3]  (0.000 ns)
+	'getelementptr' operation 11 bit ('w_lut_addr', ./fft_4k_ssr2_i16_c16_t16.hpp:330) [5]  (0.000 ns)
+	'load' operation 31 bit ('w_lut_load', ./fft_4k_ssr2_i16_c16_t16.hpp:330) on array 'w_lut' [6]  (1.237 ns)
+
+ <State 2>: 1.237ns
+The critical path consists of the following:
+	'load' operation 31 bit ('w_lut_load', ./fft_4k_ssr2_i16_c16_t16.hpp:330) on array 'w_lut' [6]  (1.237 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

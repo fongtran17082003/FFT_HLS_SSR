@@ -1,0 +1,7 @@
+   Build using "/home/phongtran/Downloads/VIVADO/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_fft_4k_ssr2_i16_c16_t16_top.cpp
+   Compiling fft_4k_ssr2_i16_c16_t16.cpp_pre.cpp.tb.cpp
+   Compiling fft_model.cpp_pre.cpp.tb.cpp
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fft_4k_ssr2_i16_c16_t16_top_ir.ll
+   Generating cosim.tv.exe
