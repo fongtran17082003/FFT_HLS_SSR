@@ -3,6 +3,7 @@
   <errorLogs>
     <logs>
       <simLog/>
+      <packageLog/>
     </logs>
   </errorLogs>
   <warningLogs>
@@ -16,6 +17,10 @@
         <logs message="WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_4k_ssr2_i16_c16_t16/hls_project/solution1/sim/verilog/fft_4k_ssr2_i16_c16_t16_top_start_for_fft_serial_kernel_wrapper_U0.v:46]" projectName="hls_project" solutionName="solution1" date="2026-03-09T10:34:05.543+0700" type="Warning"/>
         <logs message="WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/phongtran/Downloads/ssr-fft-main/fft_4k_ssr2_i16_c16_t16/hls_project/solution1/sim/verilog/fft_4k_ssr2_i16_c16_t16_top_start_for_fft_serial_kernel_1_wrapper_U0.v:46]" projectName="hls_project" solutionName="solution1" date="2026-03-09T10:34:05.541+0700" type="Warning"/>
       </simLog>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'memory_options_hybrid' from 'false' to '0' has been ignored for IP 'fft_4k_ssr2_i16_c16_t16_top_fft_syn_fft_params_s_core_ip'" projectName="hls_project" solutionName="solution1" date="2026-03-11T21:34:32.681+0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'memory_options_hybrid' from 'false' to '0' has been ignored for IP 'fft_4k_ssr2_i16_c16_t16_top_fft_syn_fft_params_3_core_ip'" projectName="hls_project" solutionName="solution1" date="2026-03-11T21:34:31.399+0700" type="Warning"/>
+      </packageLog>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>
