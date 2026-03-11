@@ -1,5 +1,9 @@
 # Vitis HLS SSR FFT Generator
 ## Introduction
+We use this code from :https://xterra2.avnet.com/xilinx/system-architecture/libraries/vitis-hls/ssr-fft 
+thansk for sharing
+The project is implemmented and integrate in VIVADO is: fft_4k_ssr2_i16_c16_t16  
+
 This project can be used to generate a Vitis HLS based FFT that processes data at 1x, 2x, or 4x the clock rate.  FFT sizes range from
 - SSR 1x: 4 to 65536
 - SSR 2x: 8 to 131072
