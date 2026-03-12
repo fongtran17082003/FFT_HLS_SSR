@@ -1,0 +1,11 @@
+RegisterMap {
+  CTRL = Register(AP_START=0, AP_DONE=0, AP_IDLE=1, AP_READY=0, RESERVED_1=0, AUTO_RESTART=0, RESERVED_2=0, INTERRUPT=0, RESERVED_3=0),
+  GIER = Register(Enable=0, RESERVED=0),
+  IP_IER = Register(CHAN0_INT_EN=0, CHAN1_INT_EN=0, RESERVED_0=0),
+  IP_ISR = Register(CHAN0_INT_ST=0, CHAN1_INT_ST=0, RESERVED_0=0),
+  din_1 = Register(din=write-only),
+  din_2 = Register(din=write-only),
+  dout_1 = Register(dout=write-only),
+  dout_2 = Register(dout=write-only),
+  iter = Register(iter=write-only)
+}
