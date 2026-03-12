@@ -9,8 +9,8 @@ File xfft_4k_ssr2_i16_c16_t16_top.hwh include memories map
 
 Link driver project VIVADO:https://drive.google.com/file/d/1BFRtL47k895xJYZuMqQl_zV-OvrspcS2/view?usp=drive_link
 
-my_ip.register_map: file describe status of register map
-fft_memory_map: file result after run "ol.ip_dict", the information in file includl freq of clk, register map and adrres of register. From line 78 and line 194 are the information of register map use in IP
+my_ip.register_map: file describe status and function of register map .
+FFT_memory_map: file result after run "ol.ip_dict", the information in file includl freq of clk, register map and adrres of register. From line 78 and line 194 are the information of register map use in IP
 
 
 This project can be used to generate a Vitis HLS based FFT that processes data at 1x, 2x, or 4x the clock rate.  FFT sizes range from
